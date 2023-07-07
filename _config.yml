@@ -2,7 +2,7 @@
 title:               ToffsCDN
 tagline:             'C4 project'
 description:         'Toffs Technologies PTE .LTD document for CDN.'
-url:                 http://support.toffstech.net
+url:                 https://support.toffstech.net
 baseurl:             ''
 paginate:            5
 permalink:           pretty
