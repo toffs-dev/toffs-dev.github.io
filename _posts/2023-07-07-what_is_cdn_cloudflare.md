@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is SSL?
+categories: Troubleshoot
 ---
 
 ### What is SSL?

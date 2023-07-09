@@ -5,7 +5,7 @@ description:         'Toffs Technologies PTE .LTD document for CDN.'
 url:                 https://support.toffstech.net
 baseurl:             ''
 paginate:            5
-permalink:           pretty
+permalink:           /:categories/:title/
 
 # About/contact
 author:
