@@ -2,11 +2,14 @@
   <div id="doc-nav" class="doc-nav">
       <ul id="doc-menu" class="nav doc-menu flex-column sticky">
         <li class="nav-item">
-            <a class="nav-link scrollto" href="blank">Troubleshoot</a>
+          <a class="nav-link scrollto" href="#">Overview</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link scrollto" href="#">SSL Certificate & TLS</a>
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.categories.Troubleshoot %}
+            {% for post in site.categories.Support_SSL %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
