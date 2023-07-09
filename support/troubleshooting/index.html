@@ -257,7 +257,26 @@ title: Troubleshooting
                 <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
                     <div id="doc-nav" class="doc-nav">
                         <ul id="doc-menu" class="nav doc-menu flex-column sticky">
+                            {% for post in paginator.troubleshoots %}
                             <li class="nav-item">
+                                <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                           </li>
+                            
+                            <div class="post">
+                                <h1 class="post-title">
+                                <a href="{{ post.url | absolute_url }}">
+                                    {{ post.title }}
+                                </a>
+                                </h1>
+
+                                <span class="post-date">{{ post.date | date_to_string }}</span>
+
+                                <!-- {{ post.content }} -->
+                            </div>
+                            {% endfor %}
+                            
+                            
+                            <!-- <li class="nav-item">
                                  <a class="nav-link scrollto" href="#dashboards">Dashboards</a>
                             </li>
                             <li class="nav-item">
@@ -281,7 +300,7 @@ title: Troubleshooting
                                         <a class="nav-link scrollto" href="#others">Others</a>
                                     </li>
                                 </ul><!--//nav-->
-                            </li>
+                            </li> -->
                         </ul><!--//doc-menu-->
                     </div><!--//doc-nav-->
                 </div><!--//doc-sidebar-->
