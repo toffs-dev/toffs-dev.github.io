@@ -43,7 +43,32 @@
             {% endfor %}
           </ul><!--//nav-->
         </li>
-        
+        <!-- Rules -->
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#">Rules</a>
+        </li>
+        <li class="nav-item">
+          <ul class="nav doc-sub-menu nav flex-column">
+            {% for post in site.categories.Rules %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- Header -->
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#">Header</a>
+        </li>
+        <li class="nav-item">
+          <ul class="nav doc-sub-menu nav flex-column">
+            {% for post in site.categories.Header %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
       </ul><!--//doc-menu-->
   </div><!--//doc-nav-->
 </div><!--//doc-sidebar-->
