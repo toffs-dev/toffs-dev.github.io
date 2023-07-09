@@ -9,7 +9,7 @@
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.categories.ssl %}
+            {% for post in site.tags.support_ssl %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
@@ -24,7 +24,7 @@
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.categories.firewall %}
+            {% for post in site.tags.support_firewall %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
