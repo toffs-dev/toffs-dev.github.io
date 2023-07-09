@@ -9,13 +9,29 @@
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.categories.Support_SSL %}
+            {% for post in site.sub_categories.support_ssl %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
             {% endfor %}
           </ul><!--//nav-->
         </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#">DNS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#">Firewall</a>
+        </li>
+        <li class="nav-item">
+          <ul class="nav doc-sub-menu nav flex-column">
+            {% for post in site.sub_categories.support_firewall %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        
       </ul><!--//doc-menu-->
   </div><!--//doc-nav-->
 </div><!--//doc-sidebar-->
