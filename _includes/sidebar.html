@@ -5,11 +5,11 @@
           <a class="nav-link scrollto" href="/support">Overview</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link scrollto" href="#">{% site.tags.Certificate %}</a>
+            <a class="nav-link scrollto" href="#">{% site.categories.Certificate %}</a>
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.tags.Certificate %}
+            {% for post in site.categories.Certificate %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
@@ -20,11 +20,11 @@
           <a class="nav-link scrollto" href="#">DNS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scrollto" href="#">{% site.tags.Firewall %}</a>
+          <a class="nav-link scrollto" href="#">{% site.categories.Firewall %}</a>
         </li>
         <li class="nav-item">
           <ul class="nav doc-sub-menu nav flex-column">
-            {% for post in site.tags.Firewall %}
+            {% for post in site.categories.Firewall %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
