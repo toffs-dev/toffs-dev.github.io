@@ -1,5 +1,5 @@
 ---
 layout: post
-title: Certificate Vault
+title: Free SSL (Let's Encrypt)
 categories: [Support, Certificate]
 ---

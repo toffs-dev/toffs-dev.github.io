@@ -1,5 +1,5 @@
 ---
 layout: post
-title: WAF
+title: Firewall Rule
 categories: [Support,Firewall]
 ---
