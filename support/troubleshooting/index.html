@@ -257,12 +257,10 @@ title: Troubleshooting
                 <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
                     <div id="doc-nav" class="doc-nav">
                         <ul id="doc-menu" class="nav doc-menu flex-column sticky">
-                            {% for tag in site.tags %}
-                                {% for post in tag[1] %}
+                            {% for post in site.categories.Troubleshoot %}
                                 <li class="nav-item">
                                     <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                 </li>
-                                {% endfor %}
                             {% endfor %}
                             
                             
