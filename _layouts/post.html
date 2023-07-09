@@ -13,13 +13,13 @@ layout: default
                     </a>
                 </h1>
             </div><!--//branding-->
-            <!-- <ol class="breadcrumb">
+            <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 {% for catg in site.categories %}
-                <li class="breadcrumb-item"><a href="/">{{ page.catg }}</a></li>
+                <li class="breadcrumb-item"><a href="/">{{ catg }}</a></li>
                 {% endfor %}
                 <li class="breadcrumb-item active">{{ page.title | default: site.title }}</li>
-            </ol> -->
+            </ol>
             <div class="top-search-box">
                  <form class="form-inline search-form justify-content-center" action="" method="get">
             
@@ -55,20 +55,3 @@ layout: default
         </div><!--//container-->
     </div><!--//doc-wrapper-->
 </div><!--//page-wrapper-->
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
