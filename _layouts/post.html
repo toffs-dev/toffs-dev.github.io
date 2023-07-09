@@ -15,7 +15,9 @@ layout: default
             </div><!--//branding-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="/">{{ site.categories }}</a></li>
+                <!-- {% for catg in site.categories %}
+                <li class="breadcrumb-item"><a href="/">{{ catg }}</a></li>
+                {% endfor %} -->
                 <li class="breadcrumb-item active">{{ page.title | default: site.title }}</li>
             </ol>
             <div class="top-search-box">
