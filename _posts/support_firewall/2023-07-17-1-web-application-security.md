@@ -71,7 +71,7 @@ Web developers possess the ability to create and construct applications in a man
 
 * Documenting code changes: This practice facilitates collaboration between security and development teams, enabling them to promptly address newly introduced vulnerabilities and implement necessary fixes.
 
-#How does Toffs keep web applications secure?
+# How does Toffs keep web applications secure?
 Toffs operates a vast network spanning 300 cities worldwide, delivering a range of comprehensive security services. These services include DDoS mitigation, a Web Application Firewall, API protection, DNSSEC, Managed SSL/TLS, Bot management, client-side security, and more.
 
 Our network allows these services to be seamlessly deployed from any data center, enabling efficient interception of attacks at their source. Integrating with our website performance services, these security measures ensure that adding new protection measures does not compromise the speed of your traffic. Moreover, these services are compatible with all types of website infrastructure and can often be activated within minutes.
