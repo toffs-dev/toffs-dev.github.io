@@ -7,16 +7,29 @@
         <!-- CDN -->
         <li class="nav-item">
           <a class="nav-link scrollto" href="#">CDN</a>
-      </li>
-      <li class="nav-item">
-        <ul class="nav doc-sub-menu nav flex-column">
-          {% for post in site.categories.Cdn %}
-          <li class="nav-item">
-            <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
-        </ul><!--//nav-->
-      </li>
+        </li>
+        <li class="nav-item">
+          <ul class="nav doc-sub-menu nav flex-column">
+            {% for post in site.categories.Cdn %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- CDN glossary -->
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#">CDN glossary</a>
+        </li>
+        <li class="nav-item">
+          <ul class="nav doc-sub-menu nav flex-column">
+            {% for post in site.categories.Cdn_glossary %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
         <!-- Certificate -->
         <li class="nav-item">
             <a class="nav-link scrollto" href="#">Certificate</a>
