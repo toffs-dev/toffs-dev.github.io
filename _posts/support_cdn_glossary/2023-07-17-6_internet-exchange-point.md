@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internet exchange point (IXP)
-categories: [Support,Cdn]
+categories: [Support,Cdn_glossary]
 ---
 
 # What is an Internet exchange point?
