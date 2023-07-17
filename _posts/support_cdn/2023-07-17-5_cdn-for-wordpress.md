@@ -33,15 +33,15 @@ When considering the best CDNs for WordPress, it is important to look for the fo
 
 Seamless WordPress integration: An ideal CDN should effortlessly integrate with WordPress, eliminating the need for complex configurations.
 
-High cache hit ratio: The cache hit ratio indicates the percentage of content requests that a CDN can serve directly from its cache, without querying the origin server. A top-notch CDN should maintain a high cache hit ratio, ensuring faster and more reliable content delivery to website visitors.
+* High cache hit ratio: The cache hit ratio indicates the percentage of content requests that a CDN can serve directly from its cache, without querying the origin server. A top-notch CDN should maintain a high cache hit ratio, ensuring faster and more reliable content delivery to website visitors.
 
-Global presence: A CDN with an extensive global presence can efficiently distribute content to website visitors worldwide, regardless of their geographical location.
+* Global presence: A CDN with an extensive global presence can efficiently distribute content to website visitors worldwide, regardless of their geographical location.
 
-DDoS protection: An effective CDN should possess the capability to withstand and mitigate DDoS attacks, ensuring the uninterrupted availability and reliability of the website.
+* DDoS protection: An effective CDN should possess the capability to withstand and mitigate DDoS attacks, ensuring the uninterrupted availability and reliability of the website.
 
-WAF integration: Web Application Firewall (WAF) integration is crucial for safeguarding web applications against various attacks such as cross-site scripting and SQL injection. CDNs provide an excellent platform for deploying WAFs since they already proxy all traffic to a website, enabling the inspection and blocking of malicious traffic.
+* WAF integration: Web Application Firewall (WAF) integration is crucial for safeguarding web applications against various attacks such as cross-site scripting and SQL injection. CDNs provide an excellent platform for deploying WAFs since they already proxy all traffic to a website, enabling the inspection and blocking of malicious traffic.
 
-Caching static and dynamic content: While a significant portion of web content remains static, there is also dynamic content that changes based on user information, time, location, and other factors. An excellent CDN should have the ability to cache and serve both static and dynamic content efficiently.
+* Caching static and dynamic content: While a significant portion of web content remains static, there is also dynamic content that changes based on user information, time, location, and other factors. An excellent CDN should have the ability to cache and serve both static and dynamic content efficiently.
 
 To illustrate an example of a CDN that encompasses these features, take a look at Toffs CDN.
 
