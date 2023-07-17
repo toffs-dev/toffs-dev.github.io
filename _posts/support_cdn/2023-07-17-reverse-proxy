@@ -1,0 +1,78 @@
+---
+layout: post
+title: Reverse proxy
+categories: [Support,Cdn]
+---
+
+### What is a reverse proxy?
+A reverse proxy functions as an intermediary server positioned in front of web servers, responsible for directing client requests, such as those from web browsers, to those web servers. The purpose of employing reverse proxies is usually to enhance security, performance, and reliability. To gain a comprehensive understanding of the functioning and advantages of a reverse proxy, let's begin by defining a proxy server.
+
+### What is a proxy server?
+A forward proxy, also known as a proxy, proxy server, or web proxy, is a server positioned in front of a group of client machines. Its role is to intercept requests made by those computers to websites and services on the Internet, acting as an intermediary between the clients and web servers.
+
+To illustrate this process, let's consider three computers involved in a typical forward proxy communication:
+
+A: User's home computer
+B: Forward proxy server
+C: Website's origin server (where the website data is stored)
+
+
+
+In regular Internet communication, computer A would directly reach out to computer C, with the client sending requests to the origin server and receiving responses in return. However, when a forward proxy is implemented, computer A redirects its requests to B, the proxy server. B then forwards these requests to C, the origin server. Upon receiving the response from C, B relays it back to A.
+
+Now, why would someone introduce this extra middleman into their Internet activity? There are several reasons for using a forward proxy:
+
+Avoiding browsing restrictions imposed by institutions or governments: Certain entities, such as governments, schools, and organizations, enforce firewalls to restrict users' access to a limited version of the Internet. By connecting to a forward proxy instead of directly accessing websites, users can bypass these restrictions.
+
+Blocking access to specific content: Conversely, proxies can be set up to prevent a group of users from accessing certain sites. For instance, a school network might use a proxy with content filtering rules to disallow access to social media platforms like Facebook, thereby controlling internet usage.
+
+Enhancing online identity protection: Some Internet users seek increased anonymity online, while others reside in regions where political dissidents face severe consequences imposed by the government. Criticizing the government on web forums or social media platforms can result in fines or imprisonment for these individuals. By employing a forward proxy to connect to a website where they post politically sensitive comments, dissidents can make it harder to trace their identity. Only the IP address of the proxy server will be visible, rather than their own.
+
+In summary, a forward proxy acts as an intermediary between client machines and web servers, facilitating various benefits such as circumventing restrictions, content filtering, and protecting online identities.
+How is a reverse proxy different?
+A reverse proxy server is positioned in front of one or multiple web servers, intercepting client requests. Unlike a forward proxy that sits in front of clients, a reverse proxy intercepts requests from clients and sends them to the origin server of a website. The reverse proxy server acts as an intermediary, forwarding requests to the origin server and receiving responses on behalf of the clients.
+
+The distinction between a forward proxy and a reverse proxy is subtle but significant. Essentially, a forward proxy ensures that an origin server never communicates directly with a specific client by sitting in front of the client. On the other hand, a reverse proxy sits in front of an origin server and ensures that no client directly communicates with that origin server.
+
+To illustrate, let's name the computers involved:
+
+D: Any number of users' home computers
+E: The reverse proxy server
+F: One or more origin servers
+
+
+
+In the reverse proxy flow, traffic flows from the user's device (D) to the internet, then to the reverse proxy (E), and finally to the origin server (F). Typically, all requests from D would go directly to F, and F would send responses directly to D. However, with a reverse proxy, all requests from D go to E, which then sends its requests to F and receives responses from F. E then passes along the appropriate responses to D.
+
+Now, let's outline some benefits of using a reverse proxy:
+
+Load balancing: A popular website with high traffic may distribute its load among multiple origin servers. A reverse proxy can provide load balancing, evenly distributing incoming traffic among these servers. This prevents overload on any single server, and if a server fails, others can handle the traffic.
+
+Protection from attacks: By placing a reverse proxy in front of the origin server, the IP address of the server remains hidden. This makes it more difficult for attackers to launch targeted attacks like DDoS. Attackers can only target the reverse proxy, which often has stronger security measures and more resources to fend off cyber attacks.
+
+Global server load balancing (GSLB): With GSLB, a website can distribute its servers globally, and the reverse proxy directs clients to the server closest to them. This minimizes the distance requests and responses need to travel, reducing load times.
+
+Caching: A reverse proxy can cache content, resulting in faster performance. For example, if a user in Paris accesses a website with origin servers in Los Angeles, they might connect to a local reverse proxy server in Paris. This proxy server can cache response data, allowing subsequent users in Paris to retrieve the cached version, significantly improving performance.
+
+SSL encryption: Handling SSL (or TLS) encryption for each client can be computationally expensive for an origin server. A reverse proxy can be configured to decrypt incoming requests and encrypt outgoing responses, offloading this task from the origin server and freeing up its resources.
+
+### How to implement a reverse proxy
+Several companies opt to construct their own reverse proxies, which demand substantial software and hardware engineering resources, alongside a noteworthy investment in physical equipment. However, a more straightforward and economical approach to enjoy the advantages of a reverse proxy is by enrolling in a CDN service. A prime example of this is the Toffs CDN, which encompasses all the aforementioned performance and security features, along with numerous additional functionalities.
+GSLB
+What is GSLB?
+Global server load balancing, also known as GSLB, refers to the strategy of efficiently distributing internet traffic among numerous interconnected servers situated across the globe. This approach offers significant advantages such as enhanced reliability and decreased latency.
+
+To illustrate, consider a shoe store that conducts its business by shipping products to customers worldwide. If this store operates from a single location, customers residing far away would experience substantial delays in submitting orders and receiving their shoes. Furthermore, during peak shopping periods, the store could become overwhelmed with a surge of orders, resulting in the inability to fulfill customer requests promptly.
+
+Let's envision a scenario where the shoe store expands its operations by opening multiple branches worldwide. As a result, customers gain the convenience of ordering shoes from a nearby store, which minimizes shipping times and decreases the likelihood of overwhelming any single store with excessive orders. This analogy draws parallels with GSLB (Global Server Load Balancing), a highly sought-after solution for businesses catering to a global user base. By distributing web traffic and services across multiple locations, GSLB effectively balances the load and emerges as one of the most favored load balancing solutions.
+What is load balancing?
+Load balancing involves the effective distribution of traffic across multiple servers. Certain load balancing techniques employ a "dumb" strategy, where traffic distribution is randomized. An example of this is round-robin DNS, a technique that sends each request to a different server than the previous one. On the other hand, there are "smart" load balancing techniques that analyze data to determine the most suitable server for handling a request. Anycast routing, for instance, selects a server based partly on the shortest travel time between the client and the server.
+How does GSLB reduce latency?
+In situations where a server is experiencing high traffic, even before it becomes overloaded and unable to handle requests, significant delays can still occur. However, by employing a Global Server Load Balancing (GSLB) system, this traffic can be effectively distributed across multiple locations. This distribution prevents any single location from being overwhelmed with requests, thus avoiding delays.
+
+Moreover, GSLB offers the advantage of reducing the travel time for requests and responses between users and servers. For instance, if a user in Los Angeles is accessing a web service hosted on an origin server based in Paris, the requests and responses need to traverse a considerable distance, divided into smaller segments known as "hops." This can introduce substantial delays in the loading process.
+
+By utilizing GSLB, a global network of servers is made available, ensuring that each user can connect to a server situated closer to their geographical location. This approach minimizes the number of hops required and reduces travel time. In the aforementioned example, if the Paris-based company employed GSLB, the user in Los Angeles could connect to a server within a 100-mile radius of their location, resulting in a much faster and more responsive user experience.
+How to enable GSLB
+
+Implementing Global Server Load Balancing (GSLB) can be effortlessly achieved while keeping costs in check by utilizing a content delivery network (CDN) like Toffs CDN. By leveraging a global CDN service, data sourced from customers' origin servers is intelligently stored across a network of servers distributed worldwide. This approach ensures efficient and dependable delivery of online content to users across the globe, all at an affordable price point.
