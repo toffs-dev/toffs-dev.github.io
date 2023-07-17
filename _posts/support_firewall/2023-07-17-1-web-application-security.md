@@ -3,7 +3,7 @@ layout: post
 title: Web Application Security
 categories: [Support,Firewall]
 ---
-# What is Web Application Security?
+### What is Web Application Security?
 Web application security refers to the set of practices implemented to safeguard websites, applications, and APIs against malicious attacks. This field encompasses a wide range of techniques and approaches, all aimed at ensuring the smooth operation of web applications while safeguarding businesses from cyber vandalism, data breaches, unfair competition, and other detrimental outcomes.
 
 The interconnected nature of the Internet exposes web applications and APIs to potential attacks originating from multiple sources, both in terms of geographic location and the complexity of the attacks themselves. Consequently, web application security involves a diverse array of strategies that address different aspects of the software supply chain, working together to establish comprehensive protection.
