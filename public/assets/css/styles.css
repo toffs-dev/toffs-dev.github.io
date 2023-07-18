@@ -1216,3 +1216,6 @@ select {
 .collapsein{
     display: none;
 }
+.pull-right{
+    float: right;
+}
