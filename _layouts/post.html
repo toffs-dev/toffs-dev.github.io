@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<script>
+    var menuId='#{{ page.id_menu }}'
+</script>
 <div class="page-wrapper">
     <!-- ******Header****** -->
     <header id="header" class="header">
@@ -53,12 +56,6 @@ layout: default
         </div><!--//container-->
     </div><!--//doc-wrapper-->
 </div><!--//page-wrapper-->
-<script>
-var menuId='#{{ page.id_menu }}'
-$(document).ready(function() {
-	$(menuId).click();
-});
-</script>
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>
