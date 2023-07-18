@@ -1,6 +1,6 @@
 ---
 layout: post
-id: common_attack
+id_menu: common_attack
 title: On-path attack
 categories: [Support,Common_Attack]
 ---
