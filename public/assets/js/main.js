@@ -1,6 +1,6 @@
 "use strict";
 
-$( document ).ready(function() {
+$(document).ready(function() {
 	$('.active a.clickable').on("click", function (e) {
 		if ($(this).hasClass('panel-collapsed')) {
 			// expand the panel
