@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: firewall_glossary
 title: What is an endpoint?
 categories: [Support,Firewall_Glossary]
 ---
