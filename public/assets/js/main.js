@@ -15,6 +15,8 @@ $( document ).ready(function() {
 			$(this).find('svg').removeClass('fa-chevron-right').addClass('fa-chevron-down');
 		}
 	});
+
+	$(menuId).click();
 });
 /* ===== Stickyfill ===== */
 /* Ref: https://github.com/wilddeer/stickyfill */
