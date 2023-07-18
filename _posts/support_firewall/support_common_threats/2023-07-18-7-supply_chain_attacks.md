@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Supply Chain attacks
+id_menu: common_attack
 categories: [Support,Common_Attack]
 ---
 # What is a supply chain attack?

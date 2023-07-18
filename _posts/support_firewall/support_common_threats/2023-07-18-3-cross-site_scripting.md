@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: common_attack
 title: Cross-Site Scripting
 categories: [Support,Common_Attack]
 ---

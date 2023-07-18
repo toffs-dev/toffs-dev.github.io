@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: Ransomware-as-a-Service (RaaS)
 categories: [Support,Ransomware]
 ---

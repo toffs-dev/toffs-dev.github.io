@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: What Is Ransomware?
 categories: [Support,Ransomware]
 ---

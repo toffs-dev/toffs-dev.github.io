@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: Preventing Ransomware Attacks
 categories: [Support,Ransomware]
 ---

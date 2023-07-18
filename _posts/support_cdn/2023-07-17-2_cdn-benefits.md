@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: cdn
 title: CDN benefits
 categories: [Support,Cdn]
 ---

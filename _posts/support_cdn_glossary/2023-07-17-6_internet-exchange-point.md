@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: cdn_glossary
 title: Internet exchange point (IXP)
 categories: [Support,Cdn_glossary]
 ---

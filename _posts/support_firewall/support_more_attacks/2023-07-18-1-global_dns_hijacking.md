@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: vulnerability
 title: Global DNS hijacking
 categories: [Support,Vulnerability]
 ---

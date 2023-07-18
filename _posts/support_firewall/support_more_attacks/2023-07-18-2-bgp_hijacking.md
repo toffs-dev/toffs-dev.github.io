@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: vulnerability
 title: BGP Hijacking
 categories: [Support,Vulnerability]
 ---

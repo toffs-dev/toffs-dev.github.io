@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: cdn
 title: How caching works
 categories: [Support,Cdn]
 ---

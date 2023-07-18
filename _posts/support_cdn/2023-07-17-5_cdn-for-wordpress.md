@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: cdn
 title: CDN for WordPress
 categories: [Support,Cdn]
 ---

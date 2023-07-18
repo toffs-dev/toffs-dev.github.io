@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: Maze Ransomware
 categories: [Support,Ransomware]
 ---

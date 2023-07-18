@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: vulnerability
 title: KRACK Attack
 categories: [Support,Vulnerability]
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: cdn
 title: CDN metrics
 categories: [Support,Cdn]
 ---

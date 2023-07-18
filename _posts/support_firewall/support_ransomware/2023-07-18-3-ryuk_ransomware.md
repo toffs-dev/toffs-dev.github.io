@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: Ryuk Ransomware
 categories: [Support,Ransomware]
 ---

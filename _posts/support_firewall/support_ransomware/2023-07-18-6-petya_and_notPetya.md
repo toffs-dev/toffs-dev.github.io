@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: ransomware
 title: Petya and NotPetya
 categories: [Support,Ransomware]
 ---
