@@ -25,12 +25,12 @@ Let's examine a straightforward comparison between normal and malicious SQL stat
 In a normal SQL query, the studentId string is passed as part of the SQL statement. The objective is to search the list of students for a match based on the entered studentId. Once a match is found, the corresponding student's record is retrieved. In essence, the command instructs the system to "locate this user and provide me with their data."
 
 The code might resemble the following:
-```
+```sql
 studentId = getRequestString("studentId");
 lookupStudent = "SELECT * FROM students WHERE studentId = " + studentId;
 ```
 If a student enters a student ID of 117 within a webpage form labeled 'Please enter your student ID number,' the resulting SQL query will appear as:
-```
+```sql
 SELECT * FROM students WHERE studentId = 117;
 ```
 This command retrieves the record associated with the specified studentId, which aligns with the developer's expectation when creating the API.
@@ -42,7 +42,7 @@ In this example, an attacker inputs a SQL command or conditional logic instead o
 SQL injection example from field
 
 Instead of searching the database table for the matching ID, the query now searches for an ID or tests if 1 is equal to 1. As expected, this statement is always true for every student in the column, leading the database to return all the data from the student's table to the attacker executing the query.
-```
+```sql
 SELECT * FROM students WHERE studentId = 117 OR 1=1;
 ```
 SQL injection exploits vulnerabilities in an Application Programming Interface (API). In this context, an API serves as the software interface through which a server receives and responds to requests.
