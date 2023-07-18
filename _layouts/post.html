@@ -54,10 +54,10 @@ layout: default
     </div><!--//doc-wrapper-->
 </div><!--//page-wrapper-->
 <script>
+var menuId='#{{ page.id_menu }}'
 $( document ).ready(function() {
-	$('#{{ page.id_menu }}').click();
+	$(menuId).click();
 });
-
 </script>
 {% if site.related_posts.size >= 1 %}
 <div class="related">
