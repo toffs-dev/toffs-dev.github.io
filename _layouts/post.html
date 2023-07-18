@@ -4,6 +4,14 @@ layout: default
 <script>
     var menuId='#{{ page.id_menu }}'
 </script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
 <div class="page-wrapper">
     <!-- ******Header****** -->
     <header id="header" class="header">
@@ -15,22 +23,6 @@ layout: default
                         <span class="text-highlight">{{ site.title }}</span>
                     </a>
                 </h1>
-                <div id="google_translate_element"></div>
- 
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                            {pageLanguage: 'en'},
-                            'google_translate_element'
-                        );
-                    }
-                </script>
-             
-                <script type="text/javascript"
-                        src=
-            "https://translate.google.com/translate_a/element.js?
-            cb=googleTranslateElementInit">
-                </script>
             </div><!--//branding-->
             <!-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -55,6 +47,7 @@ layout: default
             <div id="doc-header" class="doc-header text-center">
                 <h1 class="doc-title"><span aria-hidden="true" class="icon icon_puzzle_alt"></span> {{ page.title | default: site.title }}</h1>
                 <div class="meta"><i class="far fa-clock"></i> Last updated: </div>
+                <div id="google_translate_element"></div>
             </div><!--//doc-header-->
             <div class="doc-body row" >
                 <div class="doc-content col-md-9 col-12 order-1">
@@ -72,20 +65,4 @@ layout: default
         </div><!--//container-->
     </div><!--//doc-wrapper-->
 </div><!--//page-wrapper-->
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+
