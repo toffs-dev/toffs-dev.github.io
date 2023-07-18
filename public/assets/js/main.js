@@ -6,13 +6,13 @@ $( document ).ready(function() {
 			// expand the panel
 			$(this).parents('.active').find('.collapsein').slideDown();
 			$(this).removeClass('panel-collapsed');
-			$(this).find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+			$(this).find('i').removeClass('fa-chevron-down').addClass('fa-chevron-right');
 		}
 		else {
 			// collapse the panel
 			$(this).parents('.active').find('.collapsein').slideUp();
 			$(this).addClass('panel-collapsed');
-			$(this).find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+			$(this).find('i').removeClass('fa-chevron-right').addClass('fa-chevron-down');
 		}
 	});
 });
