@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is an API?
-categories: [Support,Firewall,API Security]
+categories: [Support,Firewall]
 ---
 # What is an application programming interface (API)?
 An application programming interface (API) serves as a set of regulations that empowers a software program to transfer data to another software program.
@@ -22,9 +22,11 @@ To function properly, API calls must adhere to the specific formatting requireme
 For instance, let's consider a commuter who uses Jennifer's website to check the traffic on Highway 192. The website sends an API call with the message "Highway 192" to request this information. The API server of the highway tracking service receives the message and responds with the travel times for Highway 192. Here's an illustrative representation of the API schema:
 
 API request | API response
+
 "Highway 192" | Travel times on Highway 192
 "Highway 217" | Travel times on Highway 217
 "Highway 225" | Travel times on Highway 225
+
 (Please note that this example is highly simplified, and real-world API requests, responses, and schemas are typically more intricate.)
 
 Now, suppose Jennifer's website sends an API request for "Highway ASDFGHJ." This request is invalid because it does not comply with the API's schema, which only allows actual highway names. Consequently, the server will be unable to provide a usable response to such a request.
