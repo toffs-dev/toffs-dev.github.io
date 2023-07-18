@@ -1,5 +1,6 @@
 ---
 layout: post
+id_menu: firewall_glossary
 title: What is HTTPS Inspection?
 categories: [Support,Firewall_Glossary]
 ---
