@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Petya and NotPetya
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What is Petya ransomware?
 Petya, identified in 2016, is a form of ransomware that operates by encrypting files and data on the victim's computer. Similar to other ransomware variants, Petya employs the tactic of demanding Bitcoin payment from the victims in exchange for decrypting the files and restoring their accessibility.

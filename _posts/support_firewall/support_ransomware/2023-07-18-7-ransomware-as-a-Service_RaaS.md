@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ransomware-as-a-Service (RaaS)
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What is ransomware-as-a-service (RaaS)?
 Ransomware-as-a-service (RaaS) is a criminal business model that enables individuals to easily access and utilize tools for carrying out ransomware attacks. Similar to other as-a-service models like software-as-a-service (SaaS) or platform-as-a-service (PaaS), RaaS allows customers to rent ransomware services rather than owning them, deviating from the conventional software distribution approach.

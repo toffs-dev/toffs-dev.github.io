@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global DNS hijacking
-categories: [Support,Firewall]
+categories: [Support,Vulnerability]
 ---
 # What is the global DNS hijacking threat?
 There has been a significant surge of DNS hijacking attacks occurring worldwide, as reported by cybersecurity experts from renowned firms such as Tripwire, FireEye, and Mandiant. These attacks have targeted various entities, including government, telecom, and Internet organizations across regions like the Middle East, Europe, North Africa, and North America.

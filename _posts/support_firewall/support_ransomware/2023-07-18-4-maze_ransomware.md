@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maze Ransomware
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What is Maze ransomware?
 Maze, a strain of ransomware, has been affecting organizations since 2019. While Maze was initially created by one main group, it has been utilized by multiple attackers for extortion purposes.

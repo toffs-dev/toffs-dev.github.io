@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KRACK Attack
-categories: [Support,Firewall]
+categories: [Support,Vulnerability]
 ---
 # What is a KRACK attack?
 Key Reinstallation Attacks (KRACK) represent a form of cyber assault that capitalizes on a weakness within WPA2, aiming to pilfer data transmitted across networks. By exploiting this vulnerability, attackers can gain unauthorized access to sensitive information such as login credentials, credit card details, private conversations, and any other data transmitted by the targeted individual. Moreover, KRACKs can be leveraged to execute on-path attacks, wherein the victim is deceived with counterfeit websites or subjected to the injection of malevolent code into legitimate online platforms.

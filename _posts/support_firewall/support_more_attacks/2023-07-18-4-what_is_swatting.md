@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Swatting?
-categories: [Support,Firewall]
+categories: [Support,Vulnerability]
 ---
 # What is swatting?
 Swatting is a form of harassment commonly carried out by members of the online gaming community. It involves intentionally provoking an emergency law enforcement response against a chosen victim through deceitful means. Swatters accomplish this by placing false emergency calls to services like 911, fabricating dangerous situations such as shootings or hostage scenarios.

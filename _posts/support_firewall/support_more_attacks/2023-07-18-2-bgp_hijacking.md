@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BGP Hijacking
-categories: [Support,Firewall]
+categories: [Support,Vulnerability]
 ---
 # What Is BGP Hijacking?
 BGP hijacking refers to the deliberate rerouting of Internet traffic by malicious actors. They achieve this by falsely claiming ownership of specific groups of IP addresses, known as IP prefixes, that they do not actually possess, control, or route to. This act can be likened to replacing all the signs along a highway and redirecting vehicular traffic to incorrect exits.

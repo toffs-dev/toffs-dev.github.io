@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preventing Ransomware Attacks
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # How to prevent ransomware
 Ransomware poses a continually growing threat, but organizations can significantly decrease their vulnerability by implementing effective security practices. These include maintaining regular software updates, frequently backing up important data, and providing comprehensive email security training to users.

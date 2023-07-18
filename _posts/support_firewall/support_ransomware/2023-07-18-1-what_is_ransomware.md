@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Is Ransomware?
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What is ransomware?
 Ransomware refers to malicious software designed to seize files and demand a ransom for their release. It can rapidly propagate throughout an entire network, occasionally infiltrating multiple networks owned by different organizations. The individuals or groups behind ransomware will only decrypt the files if the victim complies with their demand for payment.

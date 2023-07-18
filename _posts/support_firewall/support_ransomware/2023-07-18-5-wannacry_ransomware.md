@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WannaCry Ransomware
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What was the WannaCry ransomware attack?
 The WannaCry ransomware attack had far-reaching consequences for organizations worldwide. It occurred on May 12, 2017, and quickly infected over 200,000 computers in more than 150 countries. Well-known entities such as FedEx, Honda, Nissan, and the UK's National Health Service (NHS) fell victim to this attack. As a result, the NHS had to redirect some of its ambulances to alternative hospitals.

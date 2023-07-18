@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ryuk Ransomware
-categories: [Support,Firewall]
+categories: [Support,Ransomware]
 ---
 # What is Ryuk ransomware?
 Since 2018, businesses have been targeted by a specific type of ransomware known as Ryuk. Unlike most ransomware attackers, the operators behind Ryuk, known as Wizard Spider, aim for larger targets and demand higher ransoms. What sets Ryuk attacks apart is the extensive surveillance and manual efforts involved in infecting their intended victims. This level of dedication, although uncommon among typical ransomware groups, reduces the cost-effectiveness of their attacks.
