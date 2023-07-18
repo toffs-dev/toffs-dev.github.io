@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is an NGFW?
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 # What is a next-generation firewall (NGFW)?
 A next-generation firewall (NGFW) is an advanced security appliance designed to process network traffic and enforce rules to prevent potentially harmful data from passing through. NGFWs enhance and build upon the capabilities of traditional firewalls, providing more robust protection and additional features.

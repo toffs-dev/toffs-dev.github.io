@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is cyber security?
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 # What is cyber security?
 Cybersecurity refers to the set of measures taken to safeguard networks, applications, valuable data, and individuals from malicious cyber intrusions. These intrusions, known as cyber attacks, involve unauthorized attempts by individuals or collectives to gain entry into computer systems, networks, and devices with the intention of stealing information, disrupting operations, or launching more extensive assaults. Among the prevalent forms of cyber attacks are phishing, malware (including ransomware), social engineering attacks, as well as denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks.

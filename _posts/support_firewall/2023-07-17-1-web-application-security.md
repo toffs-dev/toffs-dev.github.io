@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Application Security
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 
 ### What is Web Application Security?

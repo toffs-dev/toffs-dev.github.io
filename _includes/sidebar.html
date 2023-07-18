@@ -28,7 +28,7 @@
         </li>
         <!-- Certificate -->
         <li class="nav-item active">
-          <a class="nav-link clickable panel-collapsed" id="certificate">Certificate <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <a class="nav-link clickable panel-collapsed" id="certificate">TLS & SSL Certificate <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
           <ul class="nav doc-sub-menu nav flex-column collapsein">
             {% for post in site.categories.Certificate reversed %}
             <li class="nav-item">
@@ -84,7 +84,7 @@
         </li>
         <!-- Ransomware -->
         <li class="nav-item active">
-          <a class="nav-link clickable panel-collapsed" id="ransomware" >Ransomware <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <a class="nav-link clickable panel-collapsed" id="ransomware">Ransomware <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
           <ul class="nav doc-sub-menu nav flex-column collapsein">
             {% for post in site.categories.Ransomware reversed %}
             <li class="nav-item">
@@ -95,9 +95,20 @@
         </li>
         <!-- Firewall -->
         <li class="nav-item active">
-          <a class="nav-link clickable panel-collapsed" >Firewall <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <a class="nav-link clickable panel-collapsed" id="firewall">Firewall <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
           <ul class="nav doc-sub-menu nav flex-column collapsein">
             {% for post in site.categories.Firewall reversed %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- Firewall Glossary -->
+        <li class="nav-item active">
+          <a class="nav-link clickable panel-collapsed" id="firewall_glossary">Firewall Glossary<span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <ul class="nav doc-sub-menu nav flex-column collapsein">
+            {% for post in site.categories.Firewall_Glossary reversed %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is a Firewall?
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 # What is a firewall?
 A firewall functions as a security mechanism that oversees and manages network traffic based on a predetermined set of security regulations. Typically, firewalls are positioned between a reliable network and an untrusted network, often represented by the Internet. To safeguard their networks from online risks, offices frequently employ firewalls.

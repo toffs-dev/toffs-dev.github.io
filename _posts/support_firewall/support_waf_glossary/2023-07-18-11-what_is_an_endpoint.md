@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is an endpoint?
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 # What is an endpoint in networking?
 An endpoint refers to any device that establishes a connection with a computer network. Consider the scenario where Bob and Alice engage in a phone conversation. In this case, their connection spans from one individual to the other, and the "endpoints" of their communication are their respective phones. Similarly, within a network, computerized devices engage in "conversations" by exchanging information. Just as Bob represents one endpoint in his conversation with Alice, a computer that is connected to a network serves as an endpoint for an ongoing data exchange.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is HTTPS Inspection?
-categories: [Support,Firewall]
+categories: [Support,Firewall_Glossary]
 ---
 # What is HTTPS inspection?
 HTTPS inspection, also known as SSL inspection, TLS inspection, TLS break and inspect, or HTTPS interception, refers to the process of examining encrypted web traffic by utilizing techniques similar to on-path attacks on network connections. This capability is commonly found in corporate networking devices, firewalls, and threat management products.
