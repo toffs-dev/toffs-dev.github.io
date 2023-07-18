@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross-Site Scripting
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is cross-site scripting?
 Cross-site scripting (XSS) refers to a type of attack wherein an attacker injects code into a legitimate website, which then executes when the website is loaded by the victim. The insertion of this malicious code can occur through various means, with the most common methods being appending it to the end of a URL or directly posting it on a page that showcases user-generated content. From a technical perspective, cross-site scripting can be categorized as a client-side code injection attack.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social engineering attack
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is social engineering?
 Social engineering, broadly defined, involves manipulating individuals to obtain sensitive information. While social engineering attacks can occur in person, such as when a thief disguises themselves as a delivery person to gain entry into a building, this article focuses on cyber-based social engineering attacks. Typically, these attacks aim to trick victims into revealing their login credentials or sensitive financial details.

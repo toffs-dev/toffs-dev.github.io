@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data breach
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is a data breach?
 A data breach refers to the unauthorized disclosure of confidential, private, or sensitive information into an insecure environment. It can happen either by accident or as a deliberate act.

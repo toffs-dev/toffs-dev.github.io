@@ -49,11 +49,22 @@
           </ul><!--//nav-->
         </li>
         
-        <!-- Firewall -->
+        <!-- API & Protection -->
         <li class="nav-item active">
           <a class="nav-link clickable panel-collapsed" href="#">API & Protection <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
           <ul class="nav doc-sub-menu nav flex-column collapsein">
             {% for post in site.categories.Api_Firewall reversed %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- Common Web Attack -->
+        <li class="nav-item active">
+          <a class="nav-link clickable panel-collapsed" href="#">Common Web Attack <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <ul class="nav doc-sub-menu nav flex-column collapsein">
+            {% for post in site.categories.Common_Attack reversed %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>

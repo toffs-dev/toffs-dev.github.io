@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL Injection
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is SQL injection (SQi)?
 SQL Injection is a method of injecting code into an application's entry field in order to manipulate or extract data from SQL databases. By inserting specially crafted SQL statements, attackers can execute commands that enable them to retrieve data, delete sensitive information, or perform other unauthorized actions.

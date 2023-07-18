@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On-path attack
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is an on-path attacker?
 On-path attackers position themselves between two devices, typically a web browser and a web server, with the intent to intercept or manipulate the communication between them. This type of attack enables the attackers to gather information and potentially assume the identity of either party involved. On-path attacks are not limited to websites but can also target email communications, DNS lookups, and public WiFi networks. Common targets for on-path attacks include SaaS businesses, e-commerce businesses, and users of financial applications.

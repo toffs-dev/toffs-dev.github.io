@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supply Chain attacks
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is a supply chain attack?
 A supply chain attack leverages third-party tools or services, commonly referred to as the 'supply chain,' to infiltrate the system or network of a target. These attacks are alternatively known as "value-chain attacks" or "third-party attacks."

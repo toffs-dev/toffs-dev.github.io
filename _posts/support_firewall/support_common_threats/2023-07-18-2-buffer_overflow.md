@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Buffer Overflow
-categories: [Support,Firewall]
+categories: [Support,Common_Attack]
 ---
 # What is buffer overflow?
 A buffer overflow is an irregularity that arises when software exceeds the capacity of a buffer while writing data, causing neighboring memory locations to be overwritten. To put it simply, when excessive information is inputted into a container that lacks sufficient space, this information replaces the data in adjacent containers.
