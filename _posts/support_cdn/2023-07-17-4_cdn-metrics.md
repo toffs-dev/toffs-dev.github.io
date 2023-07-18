@@ -26,15 +26,15 @@ It's important to note that round-trip time serves as an estimate and not a defi
 RTT, or Round-Trip Time, can be influenced by various factors, including infrastructure components, network traffic, and physical distance between the source and destination. 
 Here is a list of factors that can affect RTT:
 
-Transmission medium: The type of connection used, such as optical fiber, copper, wireless, or satellite communication, can impact how quickly data travels. Each medium has its own characteristics, affecting the speed and latency of the connection.
+* **Transmission medium**: The type of connection used, such as optical fiber, copper, wireless, or satellite communication, can impact how quickly data travels. Each medium has its own characteristics, affecting the speed and latency of the connection.
 
-Local area network (LAN) traffic: The volume of traffic within a local network can cause congestion and limit the connection's performance before it even reaches the wider internet. For instance, simultaneous streaming of videos by many users on the LAN can hinder the round-trip time, even if the external network has sufficient capacity.
+* **Local area network (LAN) traffic**: The volume of traffic within a local network can cause congestion and limit the connection's performance before it even reaches the wider internet. For instance, simultaneous streaming of videos by many users on the LAN can hinder the round-trip time, even if the external network has sufficient capacity.
 
-Server response time: The time taken by a server to process and respond to a request can act as a potential bottleneck in network latency. When a server is overloaded with requests, like, during a DDoS attack, its ability to respond efficiently decreases, resulting in increased RTT.
+* **Server response time:** The time taken by a server to process and respond to a request can act as a potential bottleneck in network latency. When a server is overloaded with requests, like, during a DDoS attack, its ability to respond efficiently decreases, resulting in increased RTT.
 
-Node count and congestion: The path that a connection takes across the internet can involve traversing different intermediate nodes or hops. Generally, the more nodes involved, the slower the connection becomes. Additionally, network congestion at specific nodes due to other traffic can further slow down the connection and increase RTT.
+* **Node count and congestion**: The path that a connection takes across the internet can involve traversing different intermediate nodes or hops. Generally, the more nodes involved, the slower the connection becomes. Additionally, network congestion at specific nodes due to other traffic can further slow down the connection and increase RTT.
 
-Physical distance: Although content delivery networks (CDNs) can optimize connections by reducing the number of hops, the speed of light still imposes limitations. The distance between the starting and ending points of a connection affects network connectivity and cannot be entirely overcome. However, CDNs can mitigate this obstacle by caching content closer to users, thereby reducing RTT.
+* **Physical distance**: Although content delivery networks (CDNs) can optimize connections by reducing the number of hops, the speed of light still imposes limitations. The distance between the starting and ending points of a connection affects network connectivity and cannot be entirely overcome. However, CDNs can mitigate this obstacle by caching content closer to users, thereby reducing RTT.
 
 In summary, RTT can be influenced by factors such as the transmission medium, LAN traffic, server response time, node count and congestion, and physical distance. Understanding these factors helps in identifying and addressing latency issues for improved network performance.
 
