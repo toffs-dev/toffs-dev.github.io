@@ -4,13 +4,13 @@ $( document ).ready(function() {
 	$('.active a.clickable').on("click", function (e) {
 		if ($(this).hasClass('panel-collapsed')) {
 			// expand the panel
-			$(this).parents('.active').find('.collapsein').slideDown();
+			$(this).parents('.active').find('.collapsein').show();
 			$(this).removeClass('panel-collapsed');
 			$(this).find('i').removeClass('fa-chevron-down').addClass('fa-chevron-right');
 		}
 		else {
 			// collapse the panel
-			$(this).parents('.active').find('.collapsein').slideUp();
+			$(this).parents('.active').find('.collapsein').hide();
 			$(this).addClass('panel-collapsed');
 			$(this).find('i').removeClass('fa-chevron-right').addClass('fa-chevron-down');
 		}
