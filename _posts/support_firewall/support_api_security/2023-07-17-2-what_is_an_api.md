@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is an API?
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # What is an application programming interface (API)?
 An application programming interface (API) serves as a set of regulations that empowers a software program to transfer data to another software program.

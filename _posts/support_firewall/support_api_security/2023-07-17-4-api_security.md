@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API Security
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # What is API security?
 An application programming interface (API) serves as a means for software systems to communicate and interact with each other. When a program or application possesses an API, external clients can make requests for services from it.

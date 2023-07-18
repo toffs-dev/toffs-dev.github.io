@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API Endpoint
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # What is an API endpoint?
 An application programming interface (API) serves as a communication channel between applications, allowing one application to request services from another. By utilizing APIs, developers can avoid the need to recreate existing features in their own applications. An API endpoint denotes the specific location where these requests, known as API calls, are fulfilled.

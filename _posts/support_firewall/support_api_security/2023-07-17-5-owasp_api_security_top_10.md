@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OWASP API Security Top 10
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # What is the OWASP API Security Top 10?
 The Open Web Application Security Project (OWASP) is a non-profit organization dedicated to promoting and enhancing web application security. Its primary objective is to provide valuable resources to individuals interested in building secure web applications.

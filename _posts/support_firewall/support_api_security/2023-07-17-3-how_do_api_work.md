@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How do APIs work?
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # How do APIs work?
 APIs enable software programs to communicate with each other through the exchange of API calls, facilitating the sending and receiving of information. These calls are initiated by an API client and received by an API endpoint.

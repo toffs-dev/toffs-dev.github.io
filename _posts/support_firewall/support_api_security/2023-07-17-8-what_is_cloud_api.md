@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is cloud API?
-categories: [Support,Firewall]
+categories: [Support,Api_Firewall]
 ---
 # What is a cloud API?
 Cloud APIs are software programs that enable the exchange of data between various cloud computing services or between cloud services and on-premise applications.
