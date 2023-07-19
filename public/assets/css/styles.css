@@ -1223,6 +1223,7 @@ select {
 .pull-right{
     float: right;
 }
-img[alt=800] { width: 800px; }
-img[alt=500] { width: 500px; }
-img[alt=200] { width: 200px; }
+
+img[alt="800"] { width: 800px; }
+img[alt="500"] { width: 500px; }
+img[alt="200"] { width: 200px; }
