@@ -3,32 +3,7 @@ layout: default
 title: Support
 ---
 <div class="page-wrapper">
-    <!-- ******Header****** -->
-    <header id="header" class="header">
-        <div class="container">
-            <div class="branding">
-                <h1 class="logo">
-                    <a href="index.html">
-                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                        <span class="text-highlight">{{ site.title }}</span>
-                    </a>
-                </h1>
-            </div><!--//branding-->
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item active">{{ page.title | default: site.title }}</li>
-            </ol>
-            <div class="top-search-box">
-                 <form class="form-inline search-form justify-content-center" action="" method="get">
-            
-                    <input type="text" placeholder="Search..." name="search" class="form-control search-input">
-                    
-                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-                    
-                </form>
-            </div>
-        </div><!--//container-->
-    </header><!--//header-->
+    {% include header.html %}
     <div class="doc-wrapper">
         <div class="container">
             <div id="doc-header" class="doc-header text-center">
