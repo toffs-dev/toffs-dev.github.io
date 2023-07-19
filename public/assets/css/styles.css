@@ -828,7 +828,7 @@ select {
 }
 .nav-item.active .nav-link {
     background: none;
-    color: #40babd;
+    color: #3c3c3c;
     font-weight: 600;
 }
 .body-green .nav-item.active .nav-link {
