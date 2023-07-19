@@ -3,7 +3,7 @@ layout: post
 title: CDN Rule Management - Enhancing Performance, Redirection, and Rate Limiting
 categories: [Support, Rules]
 ---
-> Drive Exceptional User Experience with Optimized Content Delivery
+*Drive Exceptional User Experience with Optimized Content Delivery*
 
 ## Introduction:
 
