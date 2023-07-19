@@ -3,10 +3,10 @@ layout: post
 title: Caching Rule Configuration Guide
 categories: [Support, Rules]
 ---
-# Introduction:
+## Introduction:
 Welcome to the Caching Rule Configuration Guide provided by TOFFS. In this document, we will walk you through the process of setting up cache rules in a Content Delivery Network (CDN). By implementing effective caching rules, you can significantly enhance website performance, reduce bandwidth costs, and improve user experience. Let's get started!
 
-# Benefits of Caching Rules:
+## Benefits of Caching Rules:
 Caching rules play a crucial role in optimizing the delivery of content through a CDN. Here are some key benefits:
 
 1. **Improved Performance:** By caching frequently accessed content closer to the end-users, you can significantly reduce latency and improve website loading times, resulting in a faster and more responsive user experience.
@@ -15,7 +15,7 @@ Caching rules play a crucial role in optimizing the delivery of content through 
 
 3. **Scalability:** Efficient caching rules allow your website to handle increased traffic without affecting performance or requiring additional server resources. This scalability ensures a smooth browsing experience even during peak times.
 
-# Setting up Caching Rules:
+## Setting up Caching Rules:
 To optimize your content delivery, follow these steps to set up caching rules in your CDN:
 
 1. **Identify Cacheable Content:** Determine which files or content should be cached based on their stability and frequency of updates. Static files such as images, CSS, JavaScript, and fonts are typically good candidates for caching.
@@ -28,7 +28,7 @@ To optimize your content delivery, follow these steps to set up caching rules in
 
 5. **Test and Monitor**: Regularly test and monitor the caching behavior of your website to ensure it aligns with your intended configuration. Monitor cache hit ratios, response times, and user experience to identify areas for optimization.
 
-# Best Practices for Caching Rules:
+## Best Practices for Caching Rules:
 Here are some best practices to consider when configuring caching rules:
 
 1. **Strike a Balance:** Set cache lifetimes appropriately to balance performance gains with content freshness. Very long cache durations may prevent timely updates from being reflected, while short durations can reduce caching efficiency.
