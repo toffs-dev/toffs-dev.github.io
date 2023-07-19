@@ -1016,12 +1016,12 @@ select {
     /* background: #494d55; */
     background: url(/public/assets/images/bg.jpg);
     background-size: cover;
-    color: rgba(255, 255, 255, 0.85);
+    color: #3c3c3c;
     padding: 60px 0;
     
 }
 .landing-page .header a {
-    color: #fff;
+    color: #3c3c3c;
 }
 .landing-page .branding {
     text-transform: uppercase;
