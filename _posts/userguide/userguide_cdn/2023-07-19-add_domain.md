@@ -1,6 +1,6 @@
 ---
 layout: post_userguide
-id_menu: cdn_glossary
-title: Origin server
+id_menu: ug_cdn
+title: Add domain
 categories: [UserGuide,UserGuide_Cdn]
 ---
