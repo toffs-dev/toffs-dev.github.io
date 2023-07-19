@@ -19,21 +19,21 @@ In the digital era, delivering content seamlessly and efficiently is essential f
 
 # Key Features:
 
-**1. Cache Rule Management:**
+1. **Cache Rule Management:**
 
     Fine-tune cache expiration headers to optimize content freshness and minimize unnecessary requests.
     Customize caching policies for specific file types, URLs, or query parameters to maximize cache hit ratios.
     Define cache bypass rules for dynamic or sensitive content that should always be fetched from the origin server.
     Implement cache invalidation rules to immediately update content when changes occur.
 
-**2. Redirection Rule Management:**
+2. **Redirection Rule Management:**
 
     Set up 301 or 302 redirects to seamlessly redirect users to new URLs, preserving SEO value and user experience.
     Utilize geolocation-based redirects to present localized content to users based on their geographic location.
     Implement intelligent routing rules to dynamically redirect users based on their device type or language preferences.
     Easily manage bulk redirects through CSV imports or integrate with your existing redirect management tools.
 
-**3. Rate Limiting Rule Management:**
+3. **Rate Limiting Rule Management:**
 
     Establish flexible rate limiting rules based on requests per second, minute, or hour.
     Apply rate limits to individual users, IP addresses, or predefined groups, ensuring fair access and preventing abuse.
