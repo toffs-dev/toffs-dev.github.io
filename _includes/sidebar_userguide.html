@@ -18,9 +18,31 @@
         </li>
         <!-- CDN -->
         <li class="nav-item active">
-          <a class="nav-link clickable panel-collapsed" id="ug_cdn">CDN <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <a class="nav-link clickable panel-collapsed" id="ug_customer">Customer  <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
           <ul class="nav doc-sub-menu nav flex-column collapsein">
-            {% for post in site.categories.UserGuide_Cdn reversed %}
+            {% for post in site.categories.UserGuide_Customer reversed %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- CDN -->
+        <li class="nav-item active">
+          <a class="nav-link clickable panel-collapsed" id="ug_whitelable">Powerby Toffs  <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <ul class="nav doc-sub-menu nav flex-column collapsein">
+            {% for post in site.categories.UserGuide_Whitelable reversed %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+        <!-- CDN -->
+        <li class="nav-item active">
+          <a class="nav-link clickable panel-collapsed" id="ug_dns">DNS <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <ul class="nav doc-sub-menu nav flex-column collapsein">
+            {% for post in site.categories.UserGuide_Dns reversed %}
             <li class="nav-item">
               <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
             </li>
