@@ -56,4 +56,4 @@ Unlock the true potential of your content delivery strategy with TOFFS’ CDN ru
 
 Enhance Performance. Simplify Delivery. Empower Your Business.
 
-Visit [www.toffstech.com](https://www.toffstech.com/) or contact techsupport@toffstech.com for more information.
+Visit [www.toffstech.com](https://www.toffstech.com/) or contact [techsupport@toffstech.com](techsupport@toffstech.com) for more information.
