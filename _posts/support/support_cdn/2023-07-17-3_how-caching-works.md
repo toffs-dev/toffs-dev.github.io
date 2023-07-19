@@ -42,4 +42,4 @@ In the case of search engines, they employ webpage caching to store frequently a
 # How does Toffs use caching?
 Toffs provides a globally distributed CDN (Content Delivery Network) consisting of 300 PoPs (Points of Presence) across the world. Users can benefit from Toffs's free CDN caching services, while those who opt for the paid CDN have the added advantage of customizing their content caching preferences. Toffs's network operates on the Anycast principle, enabling content to be delivered from any of its data centers. This means that regardless of their geographical location, a user in London and another in Sydney can access the same content seamlessly, as it is loaded from nearby CDN servers located just a few miles away.
 
-![CDN Cache](/public/assets/images/learning/cdn/cdn_cache_1.png)
+![CDN Cache](/public/assets/images/support/cdn/cdn_cache_1.png)
