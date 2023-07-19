@@ -1044,6 +1044,7 @@ select {
 .landing-page .tagline {
     font-weight: 600;
     font-size: 20px;
+    color: #3c3c3c;
 }
 .landing-page .tagline p {
     margin-bottom: 5px;
