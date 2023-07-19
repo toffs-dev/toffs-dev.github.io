@@ -51,3 +51,9 @@ In the digital era, delivering content seamlessly and efficiently is essential f
 4. **Robust Security:** Mitigate security threats with built-in DDoS protection, Web Application Firewall (WAF), and SSL/TLS encryption.
 
 5. **Expert Support:** Benefit from our experienced support team, available 24/7 to assist you with any CDN-related queries or issues.
+
+Unlock the true potential of your content delivery strategy with TOFFS’ CDN rule management capabilities. Optimize caching, streamline redirection, and enforce rate limits to provide an exceptional user experience, improve performance, and safeguard your infrastructure. Contact us today to learn how our CDN solutions can elevate your content delivery to new heights.
+
+Enhance Performance. Simplify Delivery. Empower Your Business.
+
+Visit [www.toffstech.com](https://www.toffstech.com/) or contact `techsupport@toffstech.com` for more information.
