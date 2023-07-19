@@ -1,0 +1,20 @@
+<div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+  <div id="doc-nav" class="doc-nav">
+      <ul id="doc-menu" class="nav doc-menu flex-column sticky">
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="/support">Overview</a>
+        </li>
+        <!-- CDN -->
+        <li class="nav-item active">
+          <a class="nav-link clickable panel-collapsed" id="cdn">CDN <span class="pull-right"><i class="fa-solid fa-chevron-right"></i></i></span></a>
+          <ul class="nav doc-sub-menu nav flex-column collapsein">
+            {% for post in site.categories.G_Cdn reversed %}
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul><!--//nav-->
+        </li>
+      </ul><!--//doc-menu-->
+  </div><!--//doc-nav-->
+</div><!--//doc-sidebar-->
