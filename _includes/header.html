@@ -5,17 +5,15 @@
             <h1 class="logo">
                 <a href="index.html">
                     <img alt="" class="logo" src="/public/assets/images/logo.png">
-                    <span class="text-highlight">{{ site.title }}</span>
+                    <!-- <span class="text-highlight">{{ site.title }}</span> -->
                 </a>
             </h1>
         </div><!--//branding-->
-        <!-- <ol class="breadcrumb">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
-            {% for catg in site.categories %}
-            <li class="breadcrumb-item"><a href="/">{{ page.catg }}</a></li>
-            {% endfor %}
+            <li class="breadcrumb-item"><a href="/">{{ page.categories_title }}</a></li>
             <li class="breadcrumb-item active">{{ page.title | default: site.title }}</li>
-        </ol> -->
+        </ol>
         <div class="top-search-box">
              <form class="form-inline search-form justify-content-center" action="" method="get">
         

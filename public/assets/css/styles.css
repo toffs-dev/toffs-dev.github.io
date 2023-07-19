@@ -1013,9 +1013,12 @@ select {
     display: table;
 }
 .landing-page .header {
-    background: #494d55;
+    /* background: #494d55; */
+    background: url(/public/assets/images/bg.jpg);
+    background-size: cover;
     color: rgba(255, 255, 255, 0.85);
     padding: 60px 0;
+    
 }
 .landing-page .header a {
     color: #fff;
@@ -1028,6 +1031,7 @@ select {
     font-size: 38px;
     margin-top: 0;
     margin-bottom: 0;
+    width: 150px;
 }
 .landing-page .branding .text-bold {
     font-weight: 800;
