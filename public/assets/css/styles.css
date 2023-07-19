@@ -347,13 +347,13 @@ select {
     color: rgba(255, 255, 255, 0.5);
 }
 .breadcrumb li.active {
-    color: rgba(255, 255, 255, 0.5);
+    color: #3c3c3c
 }
 .breadcrumb li a {
     color: rgba(255, 255, 255, 0.5);
 }
 .breadcrumb li a:hover {
-    color: #fff;
+    color: #3c3c3c
 }
 .breadcrumb > li + li:before {
     color: rgba(0, 0, 0, 0.4);

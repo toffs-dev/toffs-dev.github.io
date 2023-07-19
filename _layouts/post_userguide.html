@@ -4,14 +4,6 @@ layout: default
 <script>
     var menuId='#{{ page.id_menu }}'
 </script>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            {pageLanguage: 'en'},
-            'google_translate_element'
-        );
-    }
-</script>
 <div class="page-wrapper">
     {% include header.html %}
     <div class="doc-wrapper">
@@ -19,7 +11,6 @@ layout: default
             <div id="doc-header" class="doc-header text-center">
                 <h1 class="doc-title"><span aria-hidden="true" class="icon icon_puzzle_alt"></span> {{ page.title | default: site.title }}</h1>
                 <div class="meta"><i class="far fa-clock"></i> Last updated: </div>
-                <div id="google_translate_element"></div>
             </div><!--//doc-header-->
             <div class="doc-body row" >
                 <div class="doc-content col-md-9 col-12 order-1">
