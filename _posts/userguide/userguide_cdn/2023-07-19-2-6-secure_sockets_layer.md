@@ -123,7 +123,7 @@ To use, upload the **Client CRT** file and the **Client Private** file then clic
 
 #### How to generate files?
 
-You can run this commandline to create the above files: 
+**You can run this commandline to create the above files:** 
 	
 > openssl genrsa -des3 -out ca.key 4096 
 
@@ -135,7 +135,7 @@ You can run this commandline to create the above files:
 
 > openssl x509 -req -days 730 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out 	client.crt 
 
-Verify again to ensure CA and Client CRT files match together: 
+**Verify again to ensure CA and Client CRT files match together:** 
 > openssl verify -CAfile ca.crt client.crt
 
 
@@ -289,4 +289,4 @@ Figure
 Figure
 
 
-Please contact T**offs Security Operation Center** for assistance if you encounter any issues.
+Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
