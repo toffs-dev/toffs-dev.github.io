@@ -59,8 +59,8 @@ To check if the setting has affected the website: In the browser, impect the web
 
 Click in URL which has .css, in Response Headers part will show the information as below:
 
-- Content-Type: text/css
-- Content-Encoding: gzip
+Content-Type: text/css
+Content-Encoding: gzip
 
 That means the files which have .text or .css are applied gzip compression.
 

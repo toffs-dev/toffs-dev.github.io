@@ -184,44 +184,44 @@ To set Default Cipher, complete the following steps:
 3. Click **“Save”** to finish.
 
 **TLS 1.2 recommended cipher list:**
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
-TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
+- TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+- TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+- TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+- TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+- TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+- TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+- TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+- TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+- TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+- TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+- TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
+- TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+- TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
 
 **Browser support TLS1.2**
-Internet Explorer  Version 11 and above
-Google Chrome Version 29 and above
-Mozilla Firefox  Version 27 and above
-Apple Safari Version 7 and above
+- Internet Explorer  Version 11 and above
+- Google Chrome Version 29 and above
+- Mozilla Firefox  Version 27 and above
+- Apple Safari Version 7 and above
 
 **TLS 1.3 recommended cipher list:**
-TLS_AES_256_GCM_SHA384
-TLS_CHACHA20_POLY1305_SHA256
-TLS_AES_128_GCM_SHA256
-TLS_AES_128_CCM_8_SHA256
-TLS_AES_128_CCM_SHA256
+- TLS_AES_256_GCM_SHA384
+- TLS_CHACHA20_POLY1305_SHA256
+- TLS_AES_128_GCM_SHA256
+- TLS_AES_128_CCM_8_SHA256
+- TLS_AES_128_CCM_SHA256
 
 **Browser support TLS1.3**
-Google Chrome – Version 67+
-Mozilla Firefox – Version 61+
-Apple – Mac OS 10.3 & iOS 11
+- Google Chrome – Version 67+
+- Mozilla Firefox – Version 61+
+- Apple – Mac OS 10.3 & iOS 11
 
 
 ### Set HSTS
@@ -245,11 +245,10 @@ To set **HSTS**, complete the following steps:
 
     Figure 61
 
-    **HSTS Value: **
-
+    **HSTS Value:**
     - **Max Age:** 31,536,000 Seconds (365 Days) the website should always be accessed via HTTPS.
     - **HSTS Include Subdomain:** Make sure the subdomain is under SSL cert, all the subdomains will direct HTTPS.
-    - H**STS Preload**: Normally the first time accessing the browser is not successfully protected, with HSTS preload enabled. You may enable HSTS.
+    - **HSTS Preload**: Normally the first time accessing the browser is not successfully protected, with HSTS preload enabled. You may enable HSTS.
 
 3. Click **“Save”** to finish.
 
@@ -274,19 +273,20 @@ Figure 63
 HttpOnly can prevent the Cross-site scripting(XSS) attacks which always aim at stealing session cookies.
 
 **Sample:**
-    Session cookies using the set cookies header:
 
-    Figure
+Session cookies using the set cookies header:
 
-    Protected by httpOnly
+Figure
 
-    Figure
+Protected by httpOnly
+
+Figure
 
 **Secure Cookies** are used for declare that the cookie may only be transmitted using a secure connection(SSL/HTTPS).Therefore, the secure cookies only can set during an HTTPS connection.If the cookie is set but the connection is http, the browser will ignore the connection.Secure Cookies can prevent man-in-the-middle attack.
 
 **Sample:**
 
-    Figure
+Figure
 
 
 Please contact T**offs Security Operation Center** for assistance if you encounter any issues.
