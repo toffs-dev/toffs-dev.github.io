@@ -33,7 +33,7 @@ To enable/disable, click the toggle to turn on/off.
 
 ### Setup HTTP/2
 
-**“HTTP/2” **is Enterprise Internet assets placed on dedicated IP ranges, providing prioritized routing and protection to ensure maximum speed and availability. 
+**“HTTP/2”** is Enterprise Internet assets placed on dedicated IP ranges, providing prioritized routing and protection to ensure maximum speed and availability. 
 
 Figure 33
 
@@ -59,8 +59,8 @@ To check if the setting has affected the website: In the browser, impect the web
 
 Click in URL which has .css, in Response Headers part will show the information as below:
 	
-    **Content-Type: text/css
-	Content-Encoding: gzip**
+<sup>Content-Type: text/css
+Content-Encoding: gzip</sup>
 
 That means the files which have .text or .css are applied gzip compression.
 
