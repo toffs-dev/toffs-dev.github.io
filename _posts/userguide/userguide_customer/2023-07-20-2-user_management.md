@@ -237,233 +237,131 @@ To add or remove a permission for the user, follow these steps:
 
 For a more comprehensive understanding of each permission and its associated actions, refer to the detailed table provided on the page. This table explains the functionalities available for each permission.
 
-| Permission Name            | Permission Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Toffstech                  | Allow to access all features only belong to Toffs Tech Support:
+| Permission Name                                                                                                              | Permission Action                                                                                                                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Toffstech                                                                                                                    | "Allow To Access All Features Only Belong To Toffs Tech Support:                                                                                                                    |
+|                                                                                                                              | - CDN: Assign Plan, Binding IP, Server                                                                                                                                              |
+|                                                                                                                              | - DNS: DNS Management, Name Server,                                                                                                                                                 |
+|                                                                                                                              | - Multiple CDN: Multiple CDN, Monitoring Worker                                                                                                                                     |
+|                                                                                                                              | - Third-Party Authentication: Third-Party Authentication                                                                                                                            |
+|                                                                                                                              | - Website Monitoring: Performance Monitoring, Node, Status Code                                                                                                                     |
+|                                                                                                                              | - SSL Management: SSL Management                                                                                                                                                    |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account."                                                                                                                  |
+| Purchase Plan                                                                                                                | Allow To Purchase/Upgrade Plan: Professional, Premium, Enterprise                                                                                                                   |
+| Dashboard View                                                                                                               | Allow To View Overview In CDN                                                                                                                                                       |
+| Realtime Report View                                                                                                         | Allow To View Realtime Report                                                                                                                                                       |
+| Domain View                                                                                                                  | Allow To View Domain List And Details Of Each Domain (Domain, CNAME, SSL Expiry Date,...)                                                                                           |
+| Domain Edit                                                                                                                  | Allow To Edit General Setting Of Domain (HTTP Port, HTTPS Port, Origin Protocol) And Clear Cache                                                                                    |
+| Domain Add                                                                                                                   | Allow To Add New Domain                                                                                                                                                             |
+| Domain Delete                                                                                                                | Allow To Delete Domain                                                                                                                                                              |
+| Configuration View                                                                                                           | "Allow To View Configuration                                                                                                                                                        |
+|                                                                                                                              | Allow To Setup Configuration To Origin Domain"                                                                                                                                      |
+| Configuration Edit                                                                                                           | "Allow To Edit Configuration:                                                                                                                                                       |
+|                                                                                                                              | - Setup Optimization For Website (Auto Minify, Cache Configuration) & Network (HTTP/2)                                                                                              |
+|                                                                                                                              | - Setup Redirection: Domain Flattening, Redirect To Another URL,                                                                                                                    |
+|                                                                                                                              | - Setup SSL: Generate SSL Certification And Setup Configuration To Use HTTPS (Force HTTPS, Set TLS Protocols, Set Default Cipher, Set HSTS, Upgrade HTTP To HTTPS, Cookies Setting) |
+|                                                                                                                              | - Setup WAF & Security: Basic WAF Rules, Custom WAF Rules, OWASP Top 10, OWASP Rules, Captcha & Advance Security Settings                                                           |
+|                                                                                                                              | - Setup Custom Pages: Host Header, Maintenance,  Error Page."                                                                                                                       |
+| User View                                                                                                                    | Allow To View List User                                                                                                                                                             |
+| User Edit                                                                                                                    | Allow To Update User Details                                                                                                                                                        |
+| User Add                                                                                                                     | Allow To Add New User                                                                                                                                                               |
+| User Delete                                                                                                                  | Allow To Delete User                                                                                                                                                                |
+| Customer View                                                                                                                | Allow To View List Customer                                                                                                                                                         |
+| Customer Edit                                                                                                                | Allow To Update Customer                                                                                                                                                            |
+| Customer Add                                                                                                                 | Allow To Add New Customer                                                                                                                                                           |
+| Customer Delete                                                                                                              | Allow To Delete Customer                                                                                                                                                            |
+| Download Report View                                                                                                         | Allow To View Download Report: Access Log, Schedule Report & Raw Log                                                                                                                |
+|                                                                                                                              | Allow To Download Traffic Report In Access Log And Access Log In Raw Log"                                                                                                           |
+| Download Report Edit                                                                                                         | Allow To Edit Schedule Report                                                                                                                                                       |
+| Download Report Add                                                                                                          | Allow To Add Schedule Report                                                                                                                                                        |
+| Download Report Delete                                                                                                       | Allow To Delete Schedule Report                                                                                                                                                     |
+| WAF Report View                                                                                                              | Allow To View WAF Report                                                                                                                                                            |
+| Audit Log View                                                                                                               | Allow To View Audit Log In CDN                                                                                                                                                      |
+| Alert View                                                                                                                   | "Allow To View Alert In CDN                                                                                                                                                         |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account"                                                                                                                   |
+| Alert Edit                                                                                                                   | "Allow To Edit Alert In CDN                                                                                                                                                         |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account"                                                                                                                   |
+| Alert Add                                                                                                                    | "Allow To Add Alert In CDN                                                                                                                                                          |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account"                                                                                                                   |
+| Alert Delete                                                                                                                 | "Allow To Delete Alert In CDN                                                                                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account"                                                                                                                   |
+| DNS Service View                                                                                                             | "Allow White-Label Partners To View DNS Service:                                                                                                                                    |
+|                                                                                                                              | - DNS Management: Domains, List Records Of Each Domain                                                                                                                              |
+|                                                                                                                              | - Name Server                                                                                                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| DNS Service Edit                                                                                                             | "Allow White-Label Partners To Edit:                                                                                                                                                |
+|                                                                                                                              | - Record                                                                                                                                                                            |
+|                                                                                                                              | - Sitebacker                                                                                                                                                                        |
+|                                                                                                                              | - Directional                                                                                                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| DNS Service Add                                                                                                              | "Allow White-Label Partners To Add New:                                                                                                                                             |
+|                                                                                                                              | - Domain Zone                                                                                                                                                                       |
+|                                                                                                                              | - Record                                                                                                                                                                            |
+|                                                                                                                              | - Sitebacker                                                                                                                                                                        |
+|                                                                                                                              | - Directional                                                                                                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| DNS Service Delete                                                                                                           | "Allow White-Label Partners To Delete:                                                                                                                                              |
+|                                                                                                                              | - Domain                                                                                                                                                                            |
+|                                                                                                                              | - Record                                                                                                                                                                            |
+|                                                                                                                              | - Sitebacker                                                                                                                                                                        |
+|                                                                                                                              | - Directional                                                                                                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Performance Service View                                                                                                     | "Allow White-Label Partners To View Performance Service:                                                                                                                            |
+|                                                                                                                              | - List Performance Monitoring                                                                                                                                                       |
+|                                                                                                                              | - Summary                                                                                                                                                                           |
+|                                                                                                                              | - Waterfall                                                                                                                                                                         |
+|                                                                                                                              | - Trace Route                                                                                                                                                                       |
+|                                                                                                                              | - Trace Route Detail                                                                                                                                                                |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Performance Service Edit                                                                                                     | "Allow White-Label Partners To Edit Status (On/Off) And Details Of Each Monitoring Mode:                                                                                            |
+|                                                                                                                              | - Web                                                                                                                                                                               |
+|                                                                                                                              | - Trace Route                                                                                                                                                                       |
+|                                                                                                                              | - Transactions                                                                                                                                                                      |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Performance Service Add                                                                                                      | "Allow White-Label Partners To Add New Monitoring For:                                                                                                                              |
+|                                                                                                                              | - Web                                                                                                                                                                               |
+|                                                                                                                              | - Trace Route                                                                                                                                                                       |
+|                                                                                                                              | - Transactions                                                                                                                                                                      |
+|                                                                                                                              | *When Adding A New Domain In CDN, The System Will Have An ""Add Domain To Performance"" Page.                                                                                       |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Performance Service Delete                                                                                                   | "Allow White-Label Partners To Delete:                                                                                                                                              |
+|                                                                                                                              | - Web                                                                                                                                                                               |
+|                                                                                                                              | - Trace Route                                                                                                                                                                       |
+|                                                                                                                              | - Transactions                                                                                                                                                                      |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| MultiCDN Service View                                                                                                        | "Allow White-Label Partners To View Multi CDN Service:                                                                                                                              |
+|                                                                                                                              | - List Record                                                                                                                                                                       |
+|                                                                                                                              | - Details Of Each Record                                                                                                                                                            |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| MultiCDN Service Edit                                                                                                        | "Allow White-Label Partners To Edit:                                                                                                                                                |
+|                                                                                                                              | - Hostname & Frequency                                                                                                                                                              |
+|                                                                                                                              | - Edit Platform                                                                                                                                                                     |
+|                                                                                                                              | - Add Platform                                                                                                                                                                      |
+|                                                                                                                              | - Delete Platform                                                                                                                                                                   |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| MultiCDN Service Add                                                                                                         | "Allow White-Label Partners To Add New Multiple CDN                                                                                                                                 |
+|                                                                                                                              | *In CDN, The Domain List Will Have An ""Add Domain To MultiCDN"" Button.                                                                                                            |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+|                                                                                                                              | MultiCDN Service Delete                                                                                                                                                             |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Domain Customer Add                                                                                                          | "Allow White-Label Partners To Add A Domain For Other Customers And Assign Their Customer Accounts With That Domain                                                                 |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Permission Edit                                                                                                              | "Allow White-Label Partners To Have The ""Edit Permission"" Feature                                                                                                                 |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| DNS Service Edit Customer                                                                                                    | "Allow White-Label Partners To Sellect And Edit The Owner For Any Zone In MultiCDN Service.                                                                                         |
+|                                                                                                                              | (Including This Account And Its Child Account)                                                                                                                                      |
+| This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic." | "Allow White-Label Partners To Sellect And Edit The Owner For Any Record In MultiCDN Service.                                                                                       |
+|                                                                                                                              | MultiCDN Service Edit Customer                                                                                                                                                      |
+|                                                                                                                              | (Including This Account And Its Child Account)                                                                                                                                      |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Performance Service Edit Customer                                                                                            | "Allow White-Label Partners To Sellect And Edit The Owner For Any Record In Performance Service.                                                                                    |
+|                                                                                                                              | (Including This Account And Its Child Account)                                                                                                                                      |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| DNS Service Report View                                                                                                      | "Allow White-Label Partners To View DNS Report.                                                                                                                                     |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
+| Mornitoring Service Report View                                                                                              | "Allow White-Label Partners To View Mornitoring Report In Multiple CDN.                                                                                                             |
+|                                                                                                                              | This Permission Is Only Visible In The Toffstech Support Account And Is Used Only For The White-Label Partners/My Republic."                                                        |
 
-\- CDN: Assign Plan, Binding IP, Server
-
-\- DNS: DNS management, Name Server,
-
-\- Multiple CDN: Multiple CDN, Monitoring Worker
-
-\- Third-Party Authentication: Third-Party Authentication
-
-\- Website Monitoring: Performance Monitoring, Node, Status Code
-
-\- SSL Management: SSL Management
-
-<br>
-
-This permission is only visible in the Toffstech Support Account.                                                                                                                                |
-| Purchase Plan              | Allow to Purchase/Upgrade Plan: Professional, Premium, Enterprise                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Dashboard View             | Allow to view Overview in CDN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Realtime Report View       | Allow to view Realtime Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Domain View                | Allow to view Domain List and Details of each Domain (Domain, CNAME, SSL Expiry Date,...)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Domain Edit                | Allow to edit General Setting of Domain (HTTP Port, HTTPS Port, Origin Protocol) and Clear Cache                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Domain Add                 | Allow to add new Domain                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Domain Delete              | Allow to delete Domain                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Configuration View         | Allow to view Configuration
-
-Allow to setup configuration to Origin domain                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Configuration Edit         | Allow to edit Configuration:
-
-\- Setup Optimization for Website (Auto Minify, Cache Configuration) & Network (HTTP/2)
-
-\- Setup Redirection: Domain Flattening, Redirect to Another URL,
-
-\- Setup SSL: Generate SSL Certification and setup configuration to use HTTPS (Force HTTPS, Set TLS Protocols, Set Default Cipher, Set HSTS, Upgrade HTTP to HTTPS, Cookies Setting)
-
-\- Setup WAF & Security: Basic WAF Rules, Custom WAF Rules, OWASP Top 10, OWASP Rules, Captcha & Advance Security Settings
-
-\- Setup Custom Pages: Host Header, Maintenance, Error Page. |
-| User View                  | Allow to view List User                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| User Edit                  | Allow to update User details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| User Add                   | Allow to add new User                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| User Delete                | Allow to delete User                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Customer View              | Allow to view List Customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Customer Edit              | Allow to update Customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Customer Add               | Allow to add new Customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Customer Delete            | Allow to delete Customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Download Report View       | Allow to view Download Report: Access Log, Schedule Report & Raw Log
-
-Allow to download Traffic Report in Access Log and Access Log in Raw Log                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Download Report Edit       | Allow to edit Schedule Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Download Report Add        | Allow to add Schedule Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Download Report Delete     | Allow to delete Schedule Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| WAF Report View            | Allow to view WAF Report                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Audit Log View             | Allow to view Audit Log in CDN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Alert View                 | Allow to view Alert in CDN
-
-<br>
-
-This permission is only visible in the Toffstech Support Account                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Alert Edit                 | Allow to edit Alert in CDN
-
-<br>
-
-This permission is only visible in the Toffstech Support Account                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Alert Add                  | Allow to add Alert in CDN
-
-<br>
-
-This permission is only visible in the Toffstech Support Account                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Alert Delete               | Allow to delete Alert in CDN
-
-<br>
-
-This permission is only visible in the Toffstech Support Account                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| DNS Service View           | Allow White-Label Partners to view DNS Service:
-
-\- DNS management: Domains, List Records of each Domain
-
-\- Name Server
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                              |
-| DNS Service Edit           | Allow White-Label Partners to edit:
-
-\- Record
-
-\- Sitebacker
-
-\- Directional
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                                         |
-| DNS Service Add            | Allow White-Label Partners to add new:
-
-\- Domain Zone
-
-\- Record
-
-\- Sitebacker
-
-\- Directional
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                      |
-| DNS Service Delete         | Allow White-Label Partners to delete:
-
-\- Domain
-
-\- Record
-
-\- Sitebacker
-
-\- Directional
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                            |
-| Performance Service View   | Allow White-Label Partners to view Performance Service:
-
-\- List Performance Monitoring
-
-\- Summary
-
-\- Waterfall
-
-\- Trace Route
-
-\- Trace Route Detail
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                              |
-| Performance Service Edit   | Allow White-Label Partners to edit Status (On/Off) and Details of each monitoring mode:
-
-\- Web
-
-\- Trace Route
-
-\- Transactions
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                      |
-| Performance Service Add    | Allow White-Label Partners to add new monitoring for:
-
-\- Web
-
-\- Trace Route
-
-\- Transactions
-
-<br>
-
-\*When adding a new domain in CDN, the system will have an "Add Domain To Performance" page.
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                    |
-| Performance Service Delete | Allow White-Label Partners to delete:
-
-\- Web
-
-\- Trace Route
-
-\- Transactions
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                                        |
-| MultiCDN Service View      | Allow White-Label Partners to view Multi CDN Service:
-
-\- List Record
-
-\- Details of each Record
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                      |
-| MultiCDN Service Edit      | Allow White-Label Partners to edit:
-
-\- Hostname & Frequency
-
-\- Edit Platform
-
-\- Add Platform
-
-\- Delete Platform
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                   |
-| MultiCDN Service Add       | Allow White-Label Partners to add new Multiple CDN
-
-<br>
-
-\*In CDN, the domain list will have an "Add Domain to MultiCDN" button.
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                     |
-| MultiCDN Service Delete    | Allow to delete Multiple CDN
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Domain Customer Add        | Allow White-Label Partners to add a domain for other customers and assign their customer accounts with that domain
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                    |
-| Permission Edit            | Allow White-Label Partners to have the "Edit Permission" feature
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                                                                                                      |
-| DNS Service Edit Customer  | Allow White-Label Partners to sellect and edit the owner for any Zone in MultiCDN Service.
-
-(Including this account and its child account)
-
-<br>
-
-This permission is only visible in the Toffstech Support Account and is used only for The white-label partners/My Republic.                                                                                                                                                                                                                                                                                            |
 
 For further details about the roles and their permissions, you can refer to the provided [link](https://docs.google.com/spreadsheets/d/1E11LfMSIaf1WGiW0KE08HcjXhb6WKsW6LRTVJJ9CNz4/edit#gid=1005309589).
 
