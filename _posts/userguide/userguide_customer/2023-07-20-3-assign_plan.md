@@ -1,6 +1,7 @@
 ---
 layout: post_userguide
 id_menu: ug_customer
-title: Cutomer
+title: Assign Plan
 categories: [UserGuide,UserGuide_Customer]
 ---
+
