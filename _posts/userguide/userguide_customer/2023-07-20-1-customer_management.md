@@ -79,6 +79,97 @@ Figure 172: Details of the associated user displayed on the "List User" page.
 
 ## Edit a customer's details
 
+To make changes to a customer's details, follow these simple steps:
+
+**Step 1: Access the List Customer Page**
+
+First, navigate to the **List Customer page** in the system. Here, you'll find a list 	of all your customers.
+
+**Step 2: Locate the Customer to Edit**
+
+Identify the customer whose details you want to edit. Look for the **"Edit"** symbol button located next to their respective entry in the list.
+
+Figure 173
+
+**Step 3: Enter the Update Customer Page**
+
+Upon clicking the **"Edit"** symbol, the system will automatically redirect you to the Update Customer page. This is where you can make the necessary edits or updates to the customer's information.
+
+**Step 4: Save Your Changes**
+
+Once you have made the desired modifications, don't forget to click the **"Save"** button to apply the changes.
+
+Figure 174
+
+**Step 5: Confirmation**
+
+The system will process your changes and update the customer's information accordingly.
+
+Figure 175
+
+
 ## Delete a customer
 
+Deleting a customer from the system is a straightforward process. Just follow these simple steps:
+
+**Step 1: Access the List Customer Page**
+
+Firstly, navigate to the **List Customer** page. You can find this page in the system's interface.
+
+**Step 2: Locate the "Delete" Symbol Button**
+
+On the List Customer page, search for the **"Delete**" symbol button. This button will be used to initiate the deletion process.
+
+Figure 176
+
+**Step 3: Confirm Deletion**
+
+After clicking the **"Delete"** symbol button, a dialogue box will appear to confirm the deletion. If you are sure you want to proceed with the deletion, click the **"Yes"** button.
+
+Figure 177
+
+**Step 4: Successful Deletion**
+
+Once you have confirmed the deletion, the customer will be permanently removed from the system.
+
+Figure 178
+
+**Note:** *Exercise caution while performing this action, as deleted data may not be recoverable. Always double-check before confirming the deletion.*
+
+
 ## Download the details of a customer
+
+To access the customer's details, simply proceed with the following steps to download the information.
+
+**Step 1: Locate the Download Icon**
+
+We will learn how to download the details of a customer effortlessly. To get started, let's locate the **Download icon** button. You can usually find this icon in the user interface or dashboard of the application you are using.
+
+**Step 2: Click the Download Icon**
+
+Once you have located the **Download icon**, simply click on it to initiate the download process. The system will then begin to generate a CSV (Comma-Separated Values) file containing comprehensive information about the customer's domain.
+
+**Step 3: Save the CSV File**
+
+After clicking the Download icon, a prompt will appear, allowing you to choose the download location on your device. Select a suitable directory and save the CSV file there.
+
+**Step 4: Explore Customer Details**
+
+Once the CSV file has been downloaded successfully, you can open it using any spreadsheet software, such as Microsoft Excel or Google Sheets. The file will contain various essential details related to the customer's domain, including:
+
+1. Host: The host details associated with the customer's domain.
+2. HTTP Ports: Information about the HTTP ports utilized.
+3. Scheme: The scheme used for communication (e.g., HTTP, HTTPS).
+4. Customer Name: The name of the customer.
+5. Origin: Details about the origin of the customer's domain.
+6. Origin Port: The port number for the domain's origin server.
+7. Cache Configuration: Configuration settings for caching data.
+8. Redirection: Information about URL redirection if applicable.
+9. SSL Expiry Date: The expiration date of the SSL certificate.
+10. TLS Protocol: The version of the TLS protocol being used.
+11. WAF Configuration: Configuration settings for the Web Application Firewall.
+
+By following these simple steps, you can easily download and access all the vital domain information associated with your customer. This data can prove invaluable for further analysis, reporting, or any other business-related purposes.
+
+
+Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
