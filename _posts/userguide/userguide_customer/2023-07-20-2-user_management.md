@@ -473,3 +473,41 @@ Once you have made the necessary changes to the user's permissions, click the **
 
 
 ## Create an account for White-Laber User
+
+In this section, we will walk you through the step-by-step process of creating an account for a White-Label User. The White-Label Customer will be able to use our existing C4 platform, enroll their own customers, and receive dedicated support. To ensure seamless access and functionality, we have set up specific permissions from row 27 to row 45, which will only be visible to Toffstech Support accounts on the **"Edit Permission For User"** page.
+
+Let's get started with the account setup for White-Label Partners:
+
+**Step 1: Creating a New Customer Account**
+
+- Navigate the **Customer Management** platform using your credentials.
+- Click on **"+Add”** button to Create New Account and provide the necessary details for the White-Label Customer.
+
+By default, the new account will have the **"Owner**" role and be assigned to the **"Lite"** plan.
+
+**Step 2: Specifying the Enterprise Plan**
+
+- Now, go to the **"Assign Plan"** section within the account settings.
+- Here, select the **"Enterprise"** plan for the account you just created.
+- Confirm the selection to upgrade the account to an **Enterprise Plan**.
+
+The White-Label Customer's account is now set up with an **Enterprise Plan**, making a customer with enhanced features and capabilities.
+
+**Restricting Access for Public-User Enterprise Customers:**
+
+Please note that Public-User Enterprise Customers can only access our CDN (Content Delivery Network) service by default.
+
+**Additional Services and Permissions:**
+
+1. To enable the customer to utilize **DNS, Multi-CDN, and Performance services**, the SOC team must navigate to the **"Edit Permission For User"** page and add the permissions listed from row 31 to 42 and 48 to 49.
+2. To allow the customer to register their clients in C4, the SOC team should navigate to the **"Edit Permission For User"** page and add the permissions listed from row 43 to 47.
+
+**Setting up a Website for White-Label Users:**
+
+For a comprehensive guide on setting up a website for a White-Label Customer, please refer to the [**C4 White-Label Customer Setup Procedure**](https://docs.google.com/document/d/17jCNIi25eP4lCIv8CJ4-_jFc3J0PIOrcMI-gdBEvBXc/edit) documentation. This will provide you with detailed step-by-step instructions for a successful setup.
+
+
+By following these instructions, you can easily create an account for White-Label Users, grant the necessary permissions, and offer them access to our C4 platform with specialized support for their business needs.
+
+
+Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
