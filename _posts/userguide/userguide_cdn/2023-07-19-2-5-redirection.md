@@ -4,83 +4,120 @@ id_menu: ug_cdn
 title: Redirection
 categories: [UserGuide,UserGuide_Cdn]
 ---
-## Redirection
 
-Figure 40
+![800](/public/assets/images/userguide/cdn/61.png)
+*Figure 61*
 
-This is the **“Redirection”** page under the **“Configuration”** page.
+This is the **“Redirection”** page under the **“Configuration”** page. Here, we'll explore various techniques related to URL redirection to manage and optimize web addresses.
 
-1. **“Domain Flattening”**: When you have two different addresses pointing to the same page, like www.example.com/index.html and example.com/index.html, many search engines will regard those two URLs as two different pages with duplicate content. To deal with this, you can redirect all pages using one form of the web address ('URL') to the other form. E.g. From example.com to www.example.com.
+**Domain Flattening:**
+Domain flattening becomes relevant when you have two different addresses pointing to the same page, such as "www.example.com/index.html" and "example.com/index.html." Unfortunately, some search engines consider these as distinct pages with duplicate content. To tackle this issue, you can implement URL redirection to ensure that all pages use a single consistent web address. For instance, you can redirect traffic from "example.com" to "www.example.com."
 
-2. “**Redirect URL”**: URL redirection is a technique that takes one website URL and points it to another. When you type in or click on that original URL, you will be taken to the new page or website. E.g. When you open http://www.source.com, you will be redirected to https://www.destination.com.
+**Redirect URL:**
+URL redirection is a powerful technique that enables you to take one website URL and redirect it to another destination. When users enter or click on the original URL, they are automatically taken to the new page or website. For example, when you access "http://www.source.com," you will be seamlessly redirected to "https://www.destination.com."
 
-3. **“Custom Redirection”**: Navigates the user from a source URL to a target URL with a specific HTTP status code.
-
-
-### Setup Domain Flattening
-
-Figure 41
-
-**“Domain Flattening”**: When you have two different addresses pointing to the same page, like www.example.com/index.html and example.com/index.html, many search engines will regard those two URLs as two different pages with duplicate content. To deal with this, you can redirect all pages using one form of the web address ('URL') to the other form. E.g. From example.com to www.example.com.
-
-To enable/disable **Domain Flattening**, click the toggle to turn on/off.
+**Custom Redirection:**
+Custom redirection allows you to navigate users from a specific source URL to a designated target URL while also defining a particular HTTP status code for the process.
 
 
-### Setup Redirect to Another URL
-
-Figure 42
-
-**“Redirect URL”**: URL redirection is a technique that takes one website URL and points it to another. When you type in or click on that original URL, you will be taken to the new page or website. E.g. When you open http://www.source.com, you will be redirected to https://www.destination.com.
-
-**To setup Redirect to Another URL, complete the following steps:**
-
-1. In the Redirect page, to enable **Redirect to Another URL**, click the toggle. The system will display Redirect URL field.
-
-    Figure 43
-
-2. Select **HTTP or HTTPS** method.
-
-3. Enter **Redirect URL**.
-
-4. Click **“Save”** to finish.
+By understanding and implementing these redirection techniques, you can enhance the user experience and improve the search engine optimization (SEO) of your website by avoiding duplicate content issues.
 
 
-### Setup Custom Redirection
+## Setup Domain Flattening
 
-**“Custom Redirection”**: Navigates the user from a source URL to a target URL with a specific HTTP status code.
-
-Figure 44
-
-There are 2 Custom Redirection types: Static Redirection and Dynamic Redirection
-
-- **Static Redirection**: When Request meets the condition, it return Status Code and redirect to destination URL.The destination URL is static URL
-
-- **Dynamic Redirectio**n: When Request meets the condition, it return Status Code and redirect to destination URL. The destination URL is dynamic URL, value at the (.*) address of the request is the same with  value at the $xx address of destination URL.
-
-**Create Custom Redirection:**
-
-To create a new custom redirection:
-
-1. Navigate to **CDN > Domains > Configuration > Redirection > Custom Redirection**
-
-2. Click the **“+Add”** button
-
-3. Enter a descriptive name for the custom cache in the **Name** field
-
-4. Under **When incoming requests match**, define the rule expression. Use the **Field** drop-down list to choose an HTTP property (refer to Available fields for the list of available fields). For each request, the value of the property you choose for Field is compared to the value you specify for **Value** using the operator selected in **Operator**.
-
-5. Under **Then**, in the **Type** section, select a type value; in **Status Code**, select a status code value and enter the **URL**.
-
-    Figure 45
-
-6. To save and deploy your rule, select **Deploy**. If you are not ready to deploy your rule, select **Save as Draft**.
-
-**Note:**
-
-1. You may like to use the **“And”/”Or”** button when setup the configuration.
-2. The **Expression Preview** section provides the expression. You can also click on the “Edit expression” button if you would like to change it.
-3. You may like to set the priority of each item in the Custom Redirection section.
-4. **The priority** of the Cache will be according to this ordering: **Custom Redirection > Redirect to Another URL.**
+![800](/public/assets/images/userguide/cdn/62.png)
+*Figure 62*
 
 
-Please contact **Toffs Security Operation Cent**er for assistance if you encounter any issues.
+**Domain Flattening** refers to the process of redirecting multiple addresses pointing to the same page, such as www.example.com/index.html and example.com/index.html, to a single, preferred URL. Search engines often treat these different addresses as separate pages with duplicate content, which can affect your website's SEO. By implementing Domain Flattening, you ensure that all visitors are directed to the desired URL structure.
+
+Here's how you can enable or disable Domain Flattening:
+
+1. Navigate to **Redirection** page
+2. Look for the **"Domain Flattening"** option or toggle.
+3. Toggle the switch to **"ON"** if you want to enable Domain Flattening or **"OFF"** if you want to disable it.
+
+Enabling Domain Flattening will ensure that all variations of your domain address, such as example.com, are redirected to the preferred version, like www.example.com. This not only helps improve your website's search engine ranking but also provides a consistent experience for your users.
+
+Remember to save your changes after enabling or disabling Domain Flattening for it to take effect on your website.
+
+
+## Setup Redirect to Another URL
+
+![800](/public/assets/images/userguide/cdn/63.png)
+*Figure 63*
+
+**URL redirection** is a technique that allows you to redirect one website URL to another. This means that when users enter or click on the original URL, they will automatically be taken to the new page or website. For example, if you open "http://www.source.com," you will be redirected to "https://www.destination.com."
+
+**To set up URL redirection to another website, follow these steps:**
+
+**Step 1: Enable URL Redirection**
+On the Redirect page, toggle the option to enable **URL redirection**. This will reveal the Redirect URL field.
+
+![800](/public/assets/images/userguide/cdn/64.png)
+*Figure 64*
+
+**Step 2: Select HTTP or HTTPS Method**
+Choose between **HTTP** or **HTTPS** as the redirection method.
+
+**Step 3: Enter the Redirect URL**
+Input the URL of the destination page or website where you want the users to be redirected.
+
+**Step 4: Save Your Settings**
+Click the **"Save"** button to finalize and apply the URL redirection configuration.
+By following these steps, you will successfully set up URL redirection to redirect users from one website to another.
+
+
+## Setup Custom Redirection
+
+In this section, we will learn how to configure custom redirection on a Content Delivery Network (CDN). Custom redirection allows us to navigate users from a source URL to a target URL while specifying a specific HTTP status code.
+
+![800](/public/assets/images/userguide/cdn/65.png)
+*Figure 65*
+
+There are two types of custom redirection: **Static Redirection** and **Dynamic Redirection**.
+
+**Static Redirection:**
+Static redirection involves returning a status code and redirecting to a destination URL when a request meets a certain condition. The destination URL remains constant for all requests.
+
+**Dynamic Redirection:**
+Dynamic redirection also returns a status code and redirects to a destination URL when a request meets a condition. However, the destination URL is dynamic, meaning the value at the (.*) address of the request matches the value at the "$xx" address of the destination URL.
+
+
+**Now, let's proceed with creating custom redirection:**
+
+![800](/public/assets/images/userguide/cdn/66.png)
+*Figure 66*
+
+**Step 1: Navigate to the Custom Redirection Configuration**
+Go to **CDN > Domains > Configuration > Redirection > Custom Redirection**.
+
+**Step 2: Add a New Custom Redirection Rule**
+Click the **"+ Add"** button.
+Provide a descriptive name for the custom redirection in the **Name** field.
+
+**Step 3: Define the Rule Expression**
+Under the **"When incoming requests match"** section, define the rule expression.
+Use the Field drop-down list to select an **HTTP property** (see Available Fields for options).
+For each request, the value of the chosen property (Field) will be compared to the specified **Value** using the selected **Operator**.
+
+**Step 4: Set Redirection Type and URL**
+In the **"Then"** section, choose a Type value.
+Select a **Status Code** value from the available options.
+Enter the **URL** to which the request will be redirected.
+
+**Step 5: Save and Deploy the Rule**
+To save and deploy the custom redirection rule, click **"Deploy**".
+If you are not ready to deploy yet, you can select **"Save as Draft"**.
+
+**Additional Notes:**
+- You can use the **"And"/"Or"** button to set up more complex configurations.
+- The **Expression Preview** section shows the expression, and you can click **"Edit expression**" to make changes.
+- Consider setting **priorities** for each item in the Custom Redirection section.
+- Priority ordering for caching: **Custom Redirection > Redirect to Another URL**.
+
+
+With these steps, you can effectively configure custom redirection on your CDN and ensure seamless navigation for your users.
+
+
+Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
