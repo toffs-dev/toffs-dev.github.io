@@ -328,19 +328,19 @@ HttpOnly can prevent the Cross-site scripting(XSS) attacks which always aim at s
 **Sample:**
 Session cookies using the set cookies header:
 
-![800](/public/assets/images/userguide/cdn/86.png)
+![400](/public/assets/images/userguide/cdn/86.png)
 *Figure 86*
 
 Protected by httpOnly
 
-![800](/public/assets/images/userguide/cdn/87.png)
+![400](/public/assets/images/userguide/cdn/87.png)
 *Figure 87*
 
 **Secure Cookies** are used for declare that the cookie may only be transmitted using a secure connection(SSL/HTTPS).Therefore, the secure cookies only can set during an HTTPS connection.If the cookie is set but the connection is http, the browser will ignore the connection.Secure Cookies can prevent man-in-the-middle attack.
 
 **Sample:**
 
-![800](/public/assets/images/userguide/cdn/88.png)
+![400](/public/assets/images/userguide/cdn/88.png)
 *Figure 88*
 
 
