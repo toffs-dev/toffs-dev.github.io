@@ -4,93 +4,119 @@ id_menu: ug_cdn
 title: Secure Sockets Layer
 categories: [UserGuide,UserGuide_Cdn]
 ---
-## Secure Sockets Layer
 
-Figure 46
+![800](/public/assets/images/userguide/cdn/67.png)
+*Figure 67*
 
-This is the **“SSL Certificates**” page under the **“Configuration**” page. (Only Enterprise users will have SSL Certificates - Wild Card & SAN & SNI Certificates).
+This is the **“SSL Certificates”** page under the **“Configuration”** page. (Only **Enterprise** users will have SSL Certificates - Wild Card & SAN & SNI Certificates).
 
-**Allow HTTPS**: HTTPS uses SSL / TLS to encrypt communication over a network. The main function of HTTPS is to provide authentication to the website, protect the privacy and integrity of the exchanged data to prevent eavesdropping and man-in-the-middle attacks. 
+**Allow HTTPS:** HTTPS employs SSL / TLS to encrypt network communication. Its primary functions are authenticating the website, safeguarding data privacy and integrity, preventing eavesdropping, and defending against man-in-the-middle attacks.
 
 **Note:**
-*- Only Port 80 (HTTP) and Port 443 (HTTPS) are allowed to generate SSL Certificates.
+- *Important: SSL Certificates can only be generated for Port 80 (HTTP) and Port 443 (HTTPS).*
 
-- Every 00:00 Singapore time, the system will recheck the SSL certificates with Failure, Pending and Expired status. This applies to SSL certificates generated from C4.*
+- *The system performs periodic SSL certificate checks at 00:00 Singapore time, looking for certificates with Failure, Pending, and Expired statuses. This check is applicable to SSL certificates generated from C4.*
 
-[From version 5.0]
+[Starting from version 5.0]
 
-It allows the creation of Free SSL based on Let's encrypt (3 month valid) with a **domain that is pointed to Toffs CDN**. Toffs CDN will auto renew SSL 7 days before expiration. Check SSL Management for more information.
+You now have the option to create Free SSL certificates based on Let's Encrypt, which are valid for three months. These certificates are available for **domains pointed to Toffs CDN**. Toffs CDN will automatically renew the SSL certificates seven days before their expiration. For more information, refer to SSL Management.
 
-**Force HTTPS:** If your site has secure socket layer certificate (SSL) installed, you can automatically redirect visitors to the secured (HTTPS) version of your site for a secure connection. All contents should load via HTTPS and the site should show as secure.
+**Force HTTPS:** If your website has an SSL certificate installed (secure socket layer certificate), you can automatically redirect visitors to the secure (HTTPS) version of your site, ensuring a secure connection. All content should load via HTTPS, indicating a secure site.
 
-**Set TLS Protocols:** The minimum TLS version setting specifies the version of TLS a visitor must support in order to connect to your domain using TLS.
+**Set TLS Protocols:** The minimum TLS version setting specifies the required TLS version a visitor must support to connect to your domain using TLS.
 
-**Set Default Cipher:** A cipher suite is a set of algorithms that help securing a network connection.
+**Set Default Cipher:** A cipher suite comprises algorithms that enhance network connection security.
 
 **Set HSTS:** HSTS restricts web browsers to access web servers solely over HTTPS.
-- Set HSTS and Set HSTS Per URL: In the developing process, the dev team found some websites after enabling Set HSTS but did not affect all URLs of those websites. Therefore, supporters need to enable Set HSTS Per URL to affect all URLs of those websites.
-- Max Age: The total number of time that Set HSTS affects the website. (count in second)
+
+**Set HSTS Per URL:** During development, the dev team identified that enabling HSTS did not affect all URLs of certain websites. To address this, supporters need to enable HSTS Per URL to affect all URLs of those websites.
+
+**Max Age: **The total time that Set HSTS affects the website (measured in seconds).
 
 **Upgrade HTTP to HTTPS:** This feature automatically upgrades all insecure resource requests from their pages to secure variants.
 
-**Cookies Setting:** An HTTP cookie (also known as web cookie or browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server.
+**Cookies Setting:** An HTTP cookie (also known as a web cookie or browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server.
 
 
-### Generating Free SSL Certificate with Toffs CDN
+We hope this tutorial provides you with a better understanding of the "SSL Certificates" page and its features.
 
-To generate Free SSL Certificate, complete the following steps:
 
-1. In the Secure Sockets Layer (SSL) page, enable **Allow HTTPS** by clicking the toggle. 
+## Generating Free SSL Certificate with Toffs CDN
+Follow these steps to generate a Free SSL Certificate:
 
-    Figure 47
+**Step 1:**
+Go to the **Secure Sockets Layer (SSL)** page and enable **Allow HTTP**S by toggling the switch.
 
-    The system will display full feature of Secure Sockets Layer (SSL) page. 
+![800](/public/assets/images/userguide/cdn/68.png)
+*Figure 68*
 
-    Figure 48
+Upon enabling **Allow HTTPS**, the **Secure Sockets Layer (SSL)** page will display all its features.
 
-2. Click **“Generate SSL Certificate”** button.
+![800](/public/assets/images/userguide/cdn/69.png)
+*Figure 69*
 
-    Figure 49
+**Step 2:**
+Click the **"Generate SSL Certificate"** button.
 
-**Note:**
+![800](/public/assets/images/userguide/cdn/70.png)
+*Figure 70*
 
-*- Generate SSL Certificates, SSL certificate issuer by Let's Encrypt, and valid for 3 months. It will auto-renew the free SSL cert every 3 months. Toffs CDN will auto-renew SSL 7 days before expiration.
+**Important Notes:**
 
-- Only Port 80 (HTTP) and Port 443 (HTTPS) are allowed to generate SSL Certificates.*
+- *The SSL certificate issued by Let's Encrypt is valid for 3 months and will be automatically renewed for free every 3 months.*
+- *Toffs CDN will automatically renew the SSL certificate 7 days before it expires.*
+- *Generating SSL Certificates is only allowed for Port 80 (HTTP) and Port 443 (HTTPS).*
+
+Upon successful generation, the system will provide details of the free SSL certificate, including SSL Subject, SSL Issuer, Expiry Date, and Status.
 
 When generating successfully, the system will show details of the free SSL certificates including SSL Subject, SSL Issuer, Expired Date, Status.
 
-Figure 50
+![800](/public/assets/images/userguide/cdn/71.png)
+*Figure 71*
 
 
-### Uploading your SSL Certificate
-
-To upload Free SSL Certificate, complete the following steps:
-
-1. In the Secure Sockets Layer (SSL) page, enable **Allow HTTPS** by clicking the toggle. 
-
-    Figure 51
-
-    The system will display full feature of Secure Sockets Layer (SSL) page. 
-
-    Figure 52
-
-2. Click **“Browse”** button to upload CRT file and KEY file.
-
-    *Please ensure the cert had include the CRT file and KEY file.*
-
-    Figure 53
-
-3. Click **“Save”** to finish.
-
-    Figure 54
+By following these simple steps, you can easily obtain a Free SSL Certificate for your website and ensure secure connections with your users.
 
 
-### Using Mutual Authentication
+## Uploading your SSL Certificate
+
+Follow these steps to upload your Free SSL Certificate:
+
+**Step 1: Enable HTTPS**
+Go to the S**ecure Sockets Layer (SSL)** page.
+Toggle on the **"Allow HTTPS"** option.
+
+![800](/public/assets/images/userguide/cdn/72.png)
+*Figure 72*
+
+Once enabled, the full features of the Secure Sockets Layer (SSL) page will be displayed.
+
+![800](/public/assets/images/userguide/cdn/73.png)
+*Figure 73*
+
+**Step 2: Upload CRT and KEY Files**
+Click the **"Browse"** button to select and upload your **CRT and KEY files**.
+*Make sure that the certificate includes both the CRT and KEY files.*
+
+![800](/public/assets/images/userguide/cdn/74.png)
+*Figure 74*
+
+**Step 3: Save Your Changes**
+Click the **"Save"** button to complete the uploading process.
+
+![800](/public/assets/images/userguide/cdn/75.png)
+*Figure 75*
+
+By following these steps, you will successfully upload your SSL Certificate.
+
+
+## Using Mutual Authentication
 
 **Mutual authentication**, also known as two-way authentication or mutual SSL authentication, is a security process that occurs between two entities, typically a client and a server, to establish trust and verify each other's identities. In traditional client-server interactions, only the server is authenticated by the client. However, mutual authentication adds an extra layer of security by allowing the server to authenticate the client as well.
 
-Here's how the mutual authentication process typically works:
+![800](/public/assets/images/userguide/cdn/sslauthen.png)
+
+**Here's how the mutual authentication process typically works:**
 
 1. Client initiates a connection: The client sends a request to the server, indicating its intention to establish a secure connection.
 
@@ -107,186 +133,215 @@ Here's how the mutual authentication process typically works:
 Mutual authentication adds an extra layer of security to the communication process by preventing unauthorized entities from impersonating either the client or the server. It is commonly used in scenarios where strong security measures are required, such as online banking, e-commerce, and secure enterprise systems.
 
 
-#### Mutual Authenticate Client
+### Mutual Authenticate Client
 
-Figure
+![800](/public/assets/images/userguide/cdn/clientauthen.png)
 
 To use, upload the **CA CRT** file then click the Submit button.
 
+### Mutual Authenticate Origin
 
-#### Mutual Authenticate Origin
+![800](/public/assets/images/userguide/cdn/originauthen.png)
 
-Figure
-
-To use, upload the **Client CRT** file and the **Client Private** file then click the Submit button.
-
-
-#### How to generate files?
-
-**You can run this commandline to create the above files:** 
-	
-> openssl genrsa -des3 -out ca.key 4096 
-
-> openssl req -new -x509 -days 730 -key ca.key -out ca.crt 
-
-> openssl genrsa -out client.key 4096 
-
-> openssl req -new -key client.key -out client.csr 
-
-> openssl x509 -req -days 730 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out 	client.crt 
-
-**Verify again to ensure CA and Client CRT files match together:** 
-> openssl verify -CAfile ca.crt client.crt
+To use, upload the **Client CR**T file and the **Client Private** file then click the Submit button.
 
 
-### Enable Force HTTPS
+### How to generate files?
 
-**Force HTTPS:** If your site has secure socket layer certificate (SSL) installed, you can automatically redirect visitors to the secured (HTTPS) version of your site for a secure connection. All contents should load via HTTPS and the site should show as secure.
+**In Ubuntu, you can run this commandline to create the above files:**
 
-Figure 55
+openssl genrsa -des3 -out ca.key 4096 
 
-To enable/disable **Force HTTPS**, click the toggle to turn on/off.
+openssl req -new -x509 -days 730 -key ca.key -out ca.crt 
 
+openssl genrsa -out client.key 4096 
 
-### Set TLS Protocols
+openssl req -new -key client.key -out client.csr 
 
-**TLS makes websites secure to protect data from being stolen, modified, or spoofed.**
+openssl x509 -req -days 730 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt 
 
-**Set TLS Protocols**: The minimum TLS version setting specifies the version of TLS a visitor must support in order to connect to your domain using TLS.
+**Verify again to ensure CA and Client CRT files match together:**
 
-Figure 56
-
-**Note:** *Starting March 31,2022 , TLS 1.0 and 1.1 will no longer be supported by Google, Microsoft , Apple , and Mozilla . Starting from 2021, Google Chrome no longer allows websites using TLS 1.0 and 1.1, the page will not be able to load.*
-
-*TLS 1.2 - TLS 1.2 allows the use of more secure hash algorithms such as SHA-256. The ciphers with cryptographic weaknesses had posed potential security vulnerabilities.*
-
-*TLS 1.3- TLS1.3 shrunk the size of the cipher suites used for encryption,Improving the latency compare with TLS 1.2*
+openssl verify -CAfile ca.crt client.crt
 
 
-### Set Default Cipher
+## Enable Force HTTPS
+
+If your website has a secure socket layer certificate (SSL) installed, you have the option to automatically redirect your visitors to the secured **(HTTPS)** version of your site, ensuring a safe and encrypted connection. 
+
+By enabling **Force HTTPS**, all contents on your site will load via HTTPS, and your website will be displayed as secure.
+
+![800](/public/assets/images/userguide/cdn/76.png)
+*Figure 76*
+
+To activate or deactivate **Force HTTPS**, simply click the toggle button to turn it on or off, respectively. Enjoy enhanced security and peace of mind for your website visitors.
+
+
+**Set TLS Protocols**
+
+**TLS (Transport Layer Security)** plays a crucial role in safeguarding websites by protecting data from theft, manipulation, and spoofing. To ensure the highest level of security, it is essential to set the appropriate TLS protocols. The minimum TLS version setting dictates the minimum TLS version that a visitor must support to establish a secure connection with your domain.
+
+![800](/public/assets/images/userguide/cdn/77.png)
+*Figure 77*
+
+**Important Update:**
+As of March 31, 2022, Google, Microsoft, Apple, and Mozilla have officially stopped supporting TLS 1.0 and 1.1. Additionally, Google Chrome, starting from 2021, no longer allows websites using TLS 1.0 and 1.1, which means pages relying on these outdated protocols will fail to load.
+
+**Key TLS Versions:**
+**TLS 1.2:**
+TLS 1.2 introduces the use of more secure hash algorithms like SHA-256, bolstering the overall security of the connection. This version also addresses potential security vulnerabilities related to ciphers with cryptographic weaknesses.
+
+**TLS 1.3:**
+TLS 1.3 further enhances security by reducing the size of cipher suites used for encryption. This improvement significantly reduces latency compared to TLS 1.2, resulting in faster and more secure connections.
+
+![800](/public/assets/images/userguide/cdn/78.png)
+*Figure 78*
+
+By keeping your TLS protocols up-to-date, you can ensure a secure browsing experience for your visitors and protect sensitive data from potential threats. Now let's proceed with the tutorial on setting up TLS protocols to bolster your website's security.
+
+
+## Set Default Cipher
 
 **Ciphers** are algorithms, more specifically they are a set of steps for performing a cryptographic function – it can be encryption, decryption, hashing or digital signatures.
+**Set Default Cipher:** A cipher suite is a set of algorithms that help secure a network connection.
 
-**Set Default Cipher**: A cipher suite is a set of algorithms that help secure a network connection.
+**To set the default cipher, follow these steps:**
 
-To set Default Cipher, complete the following steps:
+**Step 1: Enable Set Default Cipher**
+Locate and click on the toggle to enable the Set Default Cipher option.
 
-1. Click on the toggle to enable **Set Default Cipher**.
+![800](/public/assets/images/userguide/cdn/79.png)
+*Figure 79*
 
-    Figure 57
+**Step 2: Access the Advanced Cipher List**
+Click on the **"Advance"** button to view the detailed Cipher List.
 
-2. Click on the the **“Advance**” button to see the detail Cipher List.
+![800](/public/assets/images/userguide/cdn/80.png)
+*Figure 80*
 
-    Figure 58
+**Step 3: Update Cipher List (Optional)**
+If you wish to update the Cipher List with new data, enter the relevant information in the provided box.
 
-    *If you would like to update the Cipher List, you can enter the new data in the box.*
-
-3. Click **“Save”** to finish.
+**Step 4: Save Changes**
+After making any desired updates, click on the **"Save"** button to finalize the process.
 
 **TLS 1.2 recommended cipher list:**
-- TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-- TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
-- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-- TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-- TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-- TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-- TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-- TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-- TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-- TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
-- TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
-- TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
-- TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
 
 **Browser support TLS1.2**
-- Internet Explorer  Version 11 and above
-- Google Chrome Version 29 and above
-- Mozilla Firefox  Version 27 and above
-- Apple Safari Version 7 and above
+Internet Explorer  Version 11 and above
+Google Chrome Version 29 and above
+Mozilla Firefox  Version 27 and above
+Apple Safari Version 7 and above
 
 **TLS 1.3 recommended cipher list:**
-- TLS_AES_256_GCM_SHA384
-- TLS_CHACHA20_POLY1305_SHA256
-- TLS_AES_128_GCM_SHA256
-- TLS_AES_128_CCM_8_SHA256
-- TLS_AES_128_CCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+TLS_AES_128_GCM_SHA256
+TLS_AES_128_CCM_8_SHA256
+TLS_AES_128_CCM_SHA256
+Browser support TLS1.3
+Google Chrome – Version 67+
+Mozilla Firefox – Version 61+
+Apple – Mac OS 10.3 & iOS 11
 
-**Browser support TLS1.3**
-- Google Chrome – Version 67+
-- Mozilla Firefox – Version 61+
-- Apple – Mac OS 10.3 & iOS 11
 
-
-### Set HSTS
-
-**Set HSTS**: HSTS restricts web browsers to access web servers solely over HTTPS.
+## Set HSTS
+**Set HSTS:** HSTS restricts web browsers to access web servers solely over HTTPS.
 HSTS protection against HTTP downgrade attacks (SSL stripping attacks) by requiring all traffic to utilize HTTPS. It rewrites requests that do not point to encrypted sources. Mixed content defense. HSTS automatically upgrades fetches to HTTPS in situations where a domain has mixed content.
 
 The HTTP Strict-Transport-Security response header informs browsers that the site should only be accessed using HTTPS, and that any future attempts to access it using HTTP should automatically be converted to HTTPS.
 
-To set **HSTS**, complete the following steps:
+To set **HSTS** for your website, follow these simple steps:
 
-1. Click on the toggle to enable **Set HSTS**.
+**Step 1: Enable HSTS**
+Locate the toggle button to enable HSTS in your website's settings.
 
-    Figure 59
+![800](/public/assets/images/userguide/cdn/81.png)
+*Figure 81*
 
-2. Click **“Advance”** button to configure the advanced level of Set HSTS. 
-    
-    Figure 60
+**Step 2: Configure Advanced HSTS Settings (Optional)**
+For finer control over HSTS, click on the **"Advance"** button.
 
-    The system will display **Advanced HSTS Setting** part.
+![800](/public/assets/images/userguide/cdn/82.png)
+*Figure 82*
 
-    Figure 61
+This will open up the Advanced HSTS Setting part.
 
-    **HSTS Value:**
-    - **Max Age:** 31,536,000 Seconds (365 Days) the website should always be accessed via HTTPS.
-    - **HSTS Include Subdomain:** Make sure the subdomain is under SSL cert, all the subdomains will direct HTTPS.
-    - **HSTS Preload**: Normally the first time accessing the browser is not successfully protected, with HSTS preload enabled. You may enable HSTS.
+![800](/public/assets/images/userguide/cdn/83.png)
+*Figure 83*
 
-3. Click **“Save”** to finish.
+**Step 3: Set HSTS Values**
+Determine the HSTS Value, which is the maximum duration for which the website should be exclusively accessed via HTTPS. Commonly, this value is set to 31,536,000 seconds (equivalent to 365 days).
+
+Decide whether to include subdomains under the HSTS protection. Ensure that all relevant subdomains have SSL certificates in place, as they will also be directed to use HTTPS.
+
+Consider enabling HSTS Preload, which provides additional protection during the first visit to the website by the browser. With HSTS preload enabled, you can be confident in the security right from the start.
+
+**Step 4: Save your Configuration**
+Once you have set the desired HSTS values and options, click the **"Save"** button to implement the changes.
 
 
-### Upgrade HTTP to HTTPS
+By following these steps, you have successfully set up HSTS for your website, enhancing its security and safeguarding visitors against potential security risks related to insecure HTTP connections. Remember to review and update your HSTS settings periodically to align with your website's security requirements.
+
+
+## Upgrade HTTP to HTTPS
 
 **Upgrade HTTP to HTTPS:** This feature automatically upgrades all insecure resource requests from their pages to secure variants.
 
-To enable/disable this feature, click the toggle to turn on/off.
+To activate or deactivate this feature, simply click the toggle switch to turn it on or off.
 
-Figure 62
+![800](/public/assets/images/userguide/cdn/84.png)
+*Figure 84*
 
 
-### Cookies Setting:
+## Cookies Setting
 
 **Cookies Setting:** An HTTP cookie (also known as web cookie or browser cookie) is a small piece of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server.
 
-Figure 63
+![800](/public/assets/images/userguide/cdn/85.png)
+*Figure 85*
 
 **HttpOnly Cookies** is a tag added to a browser cookie that prevents client side scripts from accessing data, this is a gate to prevent the specialized cookies from being accessed by others than the server. The http only cookies could help mitigate the risk of client side scripts accessing the protected cookies making the cookies more secure. 
 
 HttpOnly can prevent the Cross-site scripting(XSS) attacks which always aim at stealing session cookies.
 
 **Sample:**
-
 Session cookies using the set cookies header:
 
-Figure
+![800](/public/assets/images/userguide/cdn/86.png)
+*Figure 86*
 
 Protected by httpOnly
 
-Figure
+![800](/public/assets/images/userguide/cdn/87.png)
+*Figure 87*
 
 **Secure Cookies** are used for declare that the cookie may only be transmitted using a secure connection(SSL/HTTPS).Therefore, the secure cookies only can set during an HTTPS connection.If the cookie is set but the connection is http, the browser will ignore the connection.Secure Cookies can prevent man-in-the-middle attack.
 
 **Sample:**
 
-Figure
+![800](/public/assets/images/userguide/cdn/88.png)
+*Figure 88*
 
 
-Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
+Please contact **Toffs Security Operation Center f**or assistance if you encounter any issues.
