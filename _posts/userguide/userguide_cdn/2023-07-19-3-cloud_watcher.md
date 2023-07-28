@@ -4,11 +4,13 @@ id_menu: ug_cdn
 title: Cloud Watcher
 categories: [UserGuide,UserGuide_Cdn]
 ---
-## Cloud Watcher
 
 **Cloud Watcher** is an important feature integrated into TOFFS' CDN, enabling accurate and automated monitoring of the CDN system's performance. It serves as a tool to ensure that the website operates smoothly and provides the best user experience.
 
-### The key features of Cloud Watcher include:
+![800](/public/assets/images/userguide/cdn/141.png)
+*Figure 141*
+
+## The key features of Cloud Watcher include:
 
 - **Time Frame:** Administrators can set specific time frames to monitor the CDN's performance. For example, they can choose to track performance for a 5 to 30 minutes.
 
@@ -28,6 +30,9 @@ The Cloud Watcher feature within TOFFS' CDN is a crucial tool for monitoring and
 **Step 1:** Access the **Cloud Watcher page**.
 
 **Step 2:** Click the **"+Add"** button to create a new Cloud Watcher.
+
+![800](/public/assets/images/userguide/cdn/142.png)
+*Figure 142*
 
 **Step 3:** In **Domain** field, enter the domain of the website you want to monitor, for example: www.example.com.
 
