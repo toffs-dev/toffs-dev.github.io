@@ -4,7 +4,10 @@ id_menu: ug_dns
 title: Name Server
 categories: [UserGuide,UserGuide_Dns]
 ---
-Figure 203
+
+![800](/public/assets/images/userguide/dns/247.png)
+
+*Figure 247*
 
 This is the **“Name Server”** page used for **Toffs Technologies Support Team**. It shows the subdomain for NS records. For using Toffs DNS, the customer needs to point NS records to those subdomains.
 

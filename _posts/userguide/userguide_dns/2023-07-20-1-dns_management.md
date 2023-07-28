@@ -4,6 +4,11 @@ id_menu: ug_dns
 title: DNS Management
 categories: [UserGuide,UserGuide_Dns]
 ---
+
+![800](/public/assets/images/userguide/dns/218.png)
+
+*Figure 218*
+
 In this section, you'll learn how to efficiently manage the domains associated with your account. Let's explore the various functions available on the **"DNS Management"** page:
 
 1. **Adding a New Domain:**

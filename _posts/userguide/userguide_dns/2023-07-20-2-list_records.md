@@ -6,7 +6,9 @@ categories: [UserGuide,UserGuide_Dns]
 ---
 In this section, we'll be exploring the functionality of the **"List Records"** page, which displays the subdomains of a domain and their respective modes. Let's dive in!
 
-Figure 197:
+![800](/public/assets/images/userguide/dns/219.png)
+
+*Figure 219*
 
 **Displaying Subdomains and Modes:**
 On the **"List Records"** page, you can view the subdomains of a domain along with their associated modes. This provides a comprehensive overview of the records related to the domain.
@@ -24,6 +26,11 @@ With these simple functions, you can efficiently manage the records on the "List
 
 
 ## Normal
+
+![800](/public/assets/images/userguide/dns/221.png)
+
+*Figure 221*
+
 1. **A Records:**
 A records (Address records) are fundamental DNS records that map a domain name to an IPv4 address. They are used to point your domain to a specific server or hosting provider's IP address. A single domain can have multiple A records, pointing to different IP addresses for load balancing or redundancy.
 
@@ -72,7 +79,9 @@ PD Pool stands for Resource Distribution Pool. PD Pool is a fantastic tool used 
 
 In essence, PD Pool empowers you to customize how your records handle incoming queries, making it an essential resource for efficient address management. So, let's get started and explore how to leverage the power of PD Pool!
 
-Figure 199
+![800](/public/assets/images/userguide/dns/222.png)
+
+*Figure 222*
 
 
 ## Directional (DIR) 
@@ -105,17 +114,37 @@ Go to the **List Records** page on your domain management platform.
 **Step 2: Add a Directional Pool**
 Select the **"Add Pool"** option.
 
+![800](/public/assets/images/userguide/dns/223.png)
+
+*Figure 223*
+
 **Step 3: Choose Directional (DIR) Type**
 From the available pool types, choose **"Directional (DIR)"**.
+
+![800](/public/assets/images/userguide/dns/224.png)
+
+*Figure 224*
 
 **Step 4: Provide Host**
 Enter the host for which you want to create the directional pool.
 
+![800](/public/assets/images/userguide/dns/225.png)
+
+*Figure 225*
+
 **Step 5: Optionally Set TTL Value**
 You can optionally set the Time To Live (TTL) value for the pool.
 
+![800](/public/assets/images/userguide/dns/226.png)
+
+*Figure 226*
+
 **Step 6: Select A or CNAME Type**
 Choose between A, AAAA or CNAME type based on your requirements.
+
+![800](/public/assets/images/userguide/dns/227.png)
+
+*Figure 227*
 
 **Step 7: Configure IP/Geo Country/All Non-Configured Type**
 **For A Type:**
@@ -127,12 +156,23 @@ To point users from specific countries, select one or multiple countries in the 
 **For All Non-Configured Type:**
 To point all other users who don't match the above configurations, provide the IP or domain in the Point To field.
 
+![800](/public/assets/images/userguide/dns/228.png)
+
+*Figure 228*
+
 **Step 8: Add Additional Records (Optional)**
 If you want to add more directional records, click the **"+"** button and repeat **Step 7** for each additional record.
+
+![800](/public/assets/images/userguide/dns/229.png)
+
+*Figure 229*
 
 **Step 9: Submit Your Configuration**
 Once you have set up all the directional records, click the **"Submit"** button to finish.
 
+![800](/public/assets/images/userguide/dns/230.png)
+
+*Figure 230*
 
 **Example Scenarios with selected Type as A (Address - IPv4):**
 1. When a user with an IP within the range (124.32.12.0/24, 165.43.222.0/24) accesses the domain, they will be pointed to "1.1.1.1."
@@ -163,6 +203,10 @@ You can check your current public IP address by visiting the website: https://wh
 ### What is a SiteBacker Pool?
 A SiteBacker pool is a collection of A or CNAME records designed to monitor your servers and provide failover support. By using this feature, you can safeguard your web-based operations from potential disruptions caused by server failures. SiteBacker achieves this by returning multiple IP addresses in response to DNS queries, ensuring seamless access to your website.
 
+![800](/public/assets/images/userguide/dns/231.png)
+
+*Figure 231*
+
 ### Why Use Monitoring and Failover Service?
 As your online operations become increasingly critical to your business, a server failure can lead to severe consequences such as loss of customers, reduced employee productivity, and negative impacts on your bottom line. To prevent these disruptions, traditional monitoring and failover solutions exist, but they often involve deploying and maintaining expensive hardware and software. This cost can be prohibitive, especially as the number of mission-critical servers increases.
 
@@ -188,35 +232,84 @@ Navigate to the **"List Records"** page.
 **Step 2: Add a New Sitebacker Pool**
 On the **"List Records"** page, locate and click the **"Add Pool"** button.
 
+![800](/public/assets/images/userguide/dns/232.png)
+
+*Figure 232*
+
 **Step 3: Select Sitebacker (SB) Type**
 Choose **"Sitebacker (SB)"** from the available options.
+
+![800](/public/assets/images/userguide/dns/233.png)
+
+*Figure 233*
 
 **Step 4: Provide Host**
 Enter the **Host** for your Sitebacker pool.
 
+![800](/public/assets/images/userguide/dns/234.png)
+
+*Figure 234*
+
 **Step 5: Optional - TTL Value**
 If desired, you can provide a Time to Live (TTL) value.
+
+![800](/public/assets/images/userguide/dns/235.png)
+
+*Figure 235*
 
 **Step 6: Select Record Type**
 Choose one of the following record types: A, AAAA, or CNAME.
 
+![800](/public/assets/images/userguide/dns/236.png)
+
+*Figure 236*
+
 **Step 7: Optional - Frequency Value**
 If needed, you can specify a Frequency value.
 
+![800](/public/assets/images/userguide/dns/237.png)
+
+*Figure 237*
+
 **Step 8: Fill All Fail Field**
 Enter the value for the **All Fail** field, which will depend on the record type (A, 	AAAA orCNAME).
+![800](/public/assets/images/userguide/dns/238.png)
+
+*Figure 238*
 
 **Step 9: Fill Point To Field**
 Enter the value for the **Point To** field, which will depend on the record type(A, AAAA or CNAME).
 
+![800](/public/assets/images/userguide/dns/239.png)
+
+*Figure 239*
+
 **Step 10: Add Record to the Sitebacker Pool**
 Click the **"+"** button to add the record into the Sitebacker pool.
+
+![800](/public/assets/images/userguide/dns/240.png)
+
+*Figure 240*
+
+That record will be added to the below section
+
+![800](/public/assets/images/userguide/dns/241.png)
+
+*Figure 241*
 
 **Step 11: Optional - Add Additional Records**
 If you want to add more records to the pool, repeat **Steps 9 and 10**.
 
+![800](/public/assets/images/userguide/dns/242.png)
+
+*Figure 242*
+
 **Step 12: Save the Sitebacker Pool**
 Once you've added all the necessary records, click the "Save" button to finish creating the Sitebacker pool.
+
+![800](/public/assets/images/userguide/dns/243.png)
+
+*Figure 243*
 
 **Example 1: Adding a Sitebacker Pool with A Type**
 If you have an A type record like "site2.lientestsit.onl.ac" with IP address 140.238.155.109, and a backup record with IP address 3.3.3.3, you can create a Sitebacker pool to handle failures. In case all records fail, the system will switch to the "All-Failed" record with IP address 1.1.1.12 and send an email alert to the supporter.
@@ -239,6 +332,10 @@ Status:
 **Running:** The record is in a served state.
 
 **Active:** The record is running and is a backup (different from the "All Failed" record).
+
+![800](/public/assets/images/userguide/dns/244.png)
+
+*Figure 244*
 
 **Actions:**
 
