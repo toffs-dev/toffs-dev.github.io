@@ -13,8 +13,8 @@ In this tutorial, we will walk you through two methods to add a domain to MultiC
 
 First, navigate to the **CDN page** and select the **"Domain"** option to access the Domain List page.
 
-**Step 2: Click the "Add Domain to MultiCDN" button
-**
+**Step 2: Click the "Add Domain to MultiCDN" button**
+
 - On the **Domain List page**, locate the domain you want to add to MultiCDN.
 
 - Click the **"Add Domain to MultiCDN"  (“+” icon)** button corresponding to the domain.
