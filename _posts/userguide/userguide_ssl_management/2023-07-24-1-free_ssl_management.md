@@ -1,6 +1,6 @@
 ---
 layout: post_userguide
 id_menu: ug_sslmanager
-title: Add domain
+title: Free SSL Certificate Management
 categories: [UserGuide,UserGuide_SSLManage]
 ---

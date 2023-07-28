@@ -1,6 +1,6 @@
 ---
 layout: post_userguide
 id_menu: ug_sslmanager
-title: Add domain
+title: SSL Certificates Information
 categories: [UserGuide,UserGuide_SSLManage]
 ---
