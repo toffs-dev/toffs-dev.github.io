@@ -1,7 +1,7 @@
 ---
 layout: post_userguide
 id_menu: ug_multicdn
-title:AReport Monitoring
+title: Report Monitoring
 categories: [UserGuide,UserGuide_MultiCdn]
 ---
 
