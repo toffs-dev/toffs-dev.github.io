@@ -55,12 +55,12 @@ Once you click the button, you will be redirected to the page for adding a Basic
 
 **Step 3:** Select the desired field for your rule.
 
-![800](/public/assets/images/userguide/cdn/93.png)
+![400](/public/assets/images/userguide/cdn/93.png)
 *Figure 93*
 
 **Step 4:** Choose the appropriate operator for your selected field.
 
-![800](/public/assets/images/userguide/cdn/94.png)
+![400](/public/assets/images/userguide/cdn/94.png)
 *Figure 94*
 
 **Step 5:** Depending on the chosen field:
