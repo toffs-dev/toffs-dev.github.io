@@ -59,31 +59,45 @@ Please note that **"HTTP/2"** functionality is exclusively available to users wi
 CDNs (Content Delivery Networks) can apply **Gzip compression** to enhance the loading speed of your website pages for visitors. Here's how to set it up:
 
 **Step 1: Enable HTTP Compression**
+
 Look for the option to enable **HTTP Compression**. Once enabled, the system will automatically apply compression to various types of files.
 
 ![800](/public/assets/images/userguide/cdn/53.png)
 *Figure 53*
 
 **Step 2: Choose File Types for Caching**
+
 After enabling HTTP Compression, the system will list all types of files that can be compressed.
+
 Focus on the file types that you want to cache and apply compression to. For example, you might want to prioritize text files and CSS files to optimize the website's performance.
 
 ![800](/public/assets/images/userguide/cdn/54.png)
 *Figure 54*
 
 **Step 3: Save the Configuration**
+
 Once you've selected the file types for compression, click the **"Save"** button to apply the configuration.
+
 The changes might take a few minutes to propagate across the CDN network and take effect.
 
 **Step 4: Verify Compression Settings**
+
 To check if the compression settings have been applied to your website, open your website in a web browser.
+
 Press the **F12** key to open the browser's **Developer Tools**.
+
 Go to the **"Network**" tab in the Developer Tools.
+
 Access your website by clicking on a **URL** that has a .css extension (for CSS files).
+
 Look for the **"Response Headers"** section in the Developer Tools.
+
 If compression has been applied successfully, you will see the following information:
+
 **Content-Type: text/css**
+
 **Content-Encoding: gzip**
+
 This indicates that the .text or .css files on your website are now being served with gzip compression, which will help improve loading times for your visitors.
 
 ![800](/public/assets/images/userguide/cdn/55.png)
@@ -95,37 +109,49 @@ This indicates that the .text or .css files on your website are now being served
 **“Cache Configuration”** can significantly enhance the delivery speed of objects stored in ToffsCDN edge. By enabling cache configuration, you can optimize the caching process and improve user experience. Follow the steps below to set up your cache configuration:
 
 **Step 1: Enable Cache**
+
 On the Optimization page, locate the **"Enable Cache"** toggle and switch it on.
 
 ![800](/public/assets/images/userguide/cdn/56.png)
 *Figure 56*
 
 **Step 2: Query String**
+
 **Ignore Query String:** By default, the query string is ignored to increase cache hit rates, reducing unnecessary variations of an object stored.
+
 **Enable Query String:** This option allows you to store dynamic content after the question mark.
 
 **Step 3: Advanced Cache Configuration**
+
 Click the **"Advance"** button to access the advanced cache configuration settings, where you'll find detailed options for customization.
 
 ![800](/public/assets/images/userguide/cdn/57.png)
 *Figure 57*
 
 **Step 4: Caching Times (minutes)**
+
 The default caching time is set to 120 minutes (2 hours). You have the flexibility to change this cache time as per your requirements.
 
 **Step 5: Cache Extensions**
+
 You can use the default cache extension.
+
 Alternatively, you have the option to customize the cache extension according to your needs.
+
 To reset the cache extension to the default setting, click the **"Set Default" **button.
 
 **Step 6: Follow Origin Cache**
+
 Enabling this option will override the CDN cache setting and follow the cache settings defined in the origin server.
 
 **Step 7: Force Cache Params**
+
 Enabling this option allows caching of parameters without requiring any extension.
+
 You can add multiple params as needed. For example: DXR.axd?r=1_37-R7m2c
 
 **Step 8: Save Changes**
+
 After configuring your cache settings, click "Save" to apply the changes and complete the setup.
 
 ![800](/public/assets/images/userguide/cdn/58.png)
@@ -141,8 +167,10 @@ In this section, we will walk you through the steps to set up a **"Custom Cache"
 **Step 1: Accessing Custom Cache Configuration**
 
 Log in to your **CDN** account and navigate to the **"Domains"** section.
+
 Select the desired domain and go to the **"Configuration"** tab.
-Click on **"Optimization"** and then choose "Custom Cache".
+
+Click on **"Optimization"** and then choose **"Custom Cache"**.
 
 **Step 2: Creating a New Custom Cache**
 
@@ -173,6 +201,7 @@ Under the **"Then"** section, you can configure the cache actions based on the m
 **Step 5: Saving and Deploying the Rule**
 
 Once you have set up the custom cache rule, you can save and deploy it by selecting the **"Deploy"** option.
+
 If you are not ready to deploy the rule immediately, you can select **"Save as Draft"** to keep it for later deployment.
 
 

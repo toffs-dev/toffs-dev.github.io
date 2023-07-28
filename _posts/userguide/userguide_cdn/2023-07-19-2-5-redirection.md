@@ -52,19 +52,25 @@ Remember to save your changes after enabling or disabling Domain Flattening for 
 **To set up URL redirection to another website, follow these steps:**
 
 **Step 1: Enable URL Redirection**
+
 On the Redirect page, toggle the option to enable **URL redirection**. This will reveal the Redirect URL field.
 
 ![800](/public/assets/images/userguide/cdn/64.png)
 *Figure 64*
 
 **Step 2: Select HTTP or HTTPS Method**
+
 Choose between **HTTP** or **HTTPS** as the redirection method.
 
 **Step 3: Enter the Redirect URL**
+
 Input the URL of the destination page or website where you want the users to be redirected.
 
 **Step 4: Save Your Settings**
+
 Click the **"Save"** button to finalize and apply the URL redirection configuration.
+
+
 By following these steps, you will successfully set up URL redirection to redirect users from one website to another.
 
 

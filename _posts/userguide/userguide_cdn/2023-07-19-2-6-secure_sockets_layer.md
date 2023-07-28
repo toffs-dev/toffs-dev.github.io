@@ -208,21 +208,25 @@ By keeping your TLS protocols up-to-date, you can ensure a secure browsing exper
 **To set the default cipher, follow these steps:**
 
 **Step 1: Enable Set Default Cipher**
+
 Locate and click on the toggle to enable the Set Default Cipher option.
 
 ![800](/public/assets/images/userguide/cdn/79.png)
 *Figure 79*
 
 **Step 2: Access the Advanced Cipher List**
+
 Click on the **"Advance"** button to view the detailed Cipher List.
 
 ![800](/public/assets/images/userguide/cdn/80.png)
 *Figure 80*
 
 **Step 3: Update Cipher List (Optional)**
+
 If you wish to update the Cipher List with new data, enter the relevant information in the provided box.
 
 **Step 4: Save Changes**
+
 After making any desired updates, click on the **"Save"** button to finalize the process.
 
 **TLS 1.2 recommended cipher list:**
@@ -274,12 +278,14 @@ The HTTP Strict-Transport-Security response header informs browsers that the sit
 To set **HSTS** for your website, follow these simple steps:
 
 **Step 1: Enable HSTS**
+
 Locate the toggle button to enable HSTS in your website's settings.
 
 ![800](/public/assets/images/userguide/cdn/81.png)
 *Figure 81*
 
 **Step 2: Configure Advanced HSTS Settings (Optional)**
+
 For finer control over HSTS, click on the **"Advance"** button.
 
 ![800](/public/assets/images/userguide/cdn/82.png)
@@ -291,6 +297,7 @@ This will open up the Advanced HSTS Setting part.
 *Figure 83*
 
 **Step 3: Set HSTS Values**
+
 Determine the HSTS Value, which is the maximum duration for which the website should be exclusively accessed via HTTPS. Commonly, this value is set to 31,536,000 seconds (equivalent to 365 days).
 
 Decide whether to include subdomains under the HSTS protection. Ensure that all relevant subdomains have SSL certificates in place, as they will also be directed to use HTTPS.
@@ -298,6 +305,7 @@ Decide whether to include subdomains under the HSTS protection. Ensure that all 
 Consider enabling HSTS Preload, which provides additional protection during the first visit to the website by the browser. With HSTS preload enabled, you can be confident in the security right from the start.
 
 **Step 4: Save your Configuration**
+
 Once you have set the desired HSTS values and options, click the **"Save"** button to implement the changes.
 
 
