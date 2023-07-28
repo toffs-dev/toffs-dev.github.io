@@ -4,7 +4,10 @@ id_menu: ug_customer
 title: User Management
 categories: [UserGuide,UserGuide_Customer]
 ---
-Figure 180
+
+![800](/public/assets/images/userguide/customer/203.png)
+
+*Figure 203*
 
 This is the **“User Management”** page.
 
@@ -31,11 +34,17 @@ To add a new user to your account, follow the simple instructions below:
 
 To begin, navigate to the **List User page** and locate the **"+Add"** button. Click on this button to proceed.
 
-Figure 181
+![800](/public/assets/images/userguide/customer/204.png)
+
+*Figure 204*
 
 **Step 2: Select Customer**
 
-Once you've clicked the **"+Add"** button, you'll be presented with a dropdown menu. From the options available, choose "Customer."
+Once you've clicked the **"+Add"** button, you'll be presented with a dropdown menu. From the options available, choose **"Customer"**.
+
+![800](/public/assets/images/userguide/customer/205.png)
+
+*Figure 205*
 
 **Step 3: Select Role**
 
@@ -63,17 +72,15 @@ Create a password for the new user and enter it securely.
 
 Re-enter the password to confirm accuracy and avoid any mistakes.
 
-Figure 182
-
 **Step 8: Save and Finish**
 
 Once you've filled in all the necessary information, click on the **"Save**" button to complete the process.
 
-Figure 183
+![800](/public/assets/images/userguide/customer/206.png)
+
+*Figure 206*
 
 Congratulations! You have successfully added a new user to your account. After adding the user, the system will display detailed information about the user on the List User page.
-
-Figure 184
 
 
 ## Edit a User's details
@@ -86,7 +93,9 @@ First, navigate to the **List User** page in the system. This page displays a li
 
 Look for the **"Edit"** symbol button located next to each User line that you want to edit. Click on this button to proceed.
 
-Figure 185 (Note: The image shows the location of the "Edit" symbol button)
+![800](/public/assets/images/userguide/customer/207.png)
+
+*Figure 207*
 
 **Step 2: Redirect to the Update Customer Page**
 
@@ -96,15 +105,20 @@ Once you click the **"Edit"** button, the system will automatically redirect you
 
 After making the necessary edits to the user's details, scroll down to the bottom of the Update Customer page. Locate the **"Save"** button and click on it to save your changes.
 
-Figure 186 (Note: The image illustrates the location of the "Save" button)
+![800](/public/assets/images/userguide/customer/208.png)
+
+*Figure 208 (Note: The image illustrates the location of the "Save" button)*
 
 **Step 4: Verify the Update**
 
 The system will process your changes, and upon successful completion, it will update the new customer information.
 
-Figure 187 (Note: The image confirms that the customer information has been updated)
+![800](/public/assets/images/userguide/customer/209.png)
+
+*Figure 209 (Note: The image confirms that the customer information has been updated)*
 
 That's it! You have successfully edited a user's details using our system.
+
 
 ## Enable/Disable a User
 
@@ -114,7 +128,9 @@ We'll guide you on how to enable or disable a user in just a few simple steps. B
 
 To begin, find the toggle switch associated with the user you wish to enable or disable. The toggle switch appears as an interactive button That can be easily toggled on and off.
 
-Figure 188
+![800](/public/assets/images/userguide/customer/210.png)
+
+*Figure 210*
 
 **Step 2: Enabling a User**
 
@@ -124,7 +140,6 @@ To enable a user, simply click on the toggle switch and set it to the **"ON"** p
 
 If you want to disable a user, click on the toggle switch and set it to the **"OFF"** position. Once disabled, the user will lose access to the system, and their new status will be displayed as follows:
 
-Figure 189
 
 This feature allows you to manage user accounts efficiently based on your preferences. Remember to always double-check the user's status after making changes to ensure everything is set as desired. Happy user management!
 
@@ -137,17 +152,22 @@ To delete a user from the system, please follow the instructions below:
 
 To get started, navigate to the **List User page**. 
 
-Figure 190: [Include a screenshot or diagram here if available]
 
 **Step 2: Initiate the Deletion Process**
 
 Once you're on the List User page, you'll find a **"Delete"** symbol button next to each user's name. Identify the user you wish to delete, and then click on the **"Delete"** symbol button corresponding to that user.
 
+![800](/public/assets/images/userguide/customer/211.png)
+
+*Figure 211*
+
 **Step 3: Confirm the Deletion**
 
 After clicking the **"Delete"** button, a dialogue box will appear, asking for confirmation before proceeding with the deletion. This extra step helps prevent accidental deletions. To confirm the deletion, click on the **"Yes"** button.
 
-Figure 191: [Include a screenshot or diagram of the confirmation dialogue box]
+![800](/public/assets/images/userguide/customer/212.png)
+
+*Figure 212: [Include a screenshot or diagram of the confirmation dialogue box]*
 
 **Step 4: User Successfully Deleted**
 
@@ -172,6 +192,10 @@ Once you are on the **List User Page**, you'll see a list of users and their ass
 - Click on the **"Edit"** icon button next to the user's details.
 
 **Step 3: Updating User Details and Assigning Role**
+
+![800](/public/assets/images/userguide/customer/213.png)
+
+*Figure 213*
 
 After clicking the **"Edit"** icon button, the system will direct you to the **"Update User Details"** page. This page allows you to assign a role for the user. The available roles and their descriptions are as follows:
 
@@ -214,7 +238,9 @@ To begin, follow these steps:
 
 - Click the "Edit Permission for User" symbol button, as shown in Figure 194.
 
-[Figure 194 - Insert image of the Edit Permission button]
+![800](/public/assets/images/userguide/customer/214.png)
+
+*Figure 214 - Insert image of the Edit Permission button*
 
 **Step 2: Editing User Permissions**
 
@@ -228,8 +254,11 @@ To add or remove a permission for the user, follow these steps:
 
 - Double click on the permission name that you want to add or remove.
 
-- After making your selection, click the **"Save"** button to save the changes, as shown in Figure 195.
-[Figure 195 - Insert image of the Save button]
+- After making your selection, click the **"Save"** button to save the changes, as shown in Figure 215.
+
+![800](/public/assets/images/userguide/customer/215.png)
+
+*Figure 215 - Insert image of the Save button*
 
 *Please note that certain permissions may be specific to the "Toffstech Support Account" or the "White-Label Partners/My Republic." Make sure to choose the appropriate permissions based on the user's role and access requirements.*
 
@@ -237,7 +266,15 @@ To add or remove a permission for the user, follow these steps:
 
 For a more comprehensive understanding of each permission and its associated actions, refer to the detailed table provided on the page. This table explains the functionalities available for each permission.
 
-[Insert the table here]
+![800](/public/assets/images/userguide/customer/permission1.png)
+![800](/public/assets/images/userguide/customer/permission2.png)
+![800](/public/assets/images/userguide/customer/permission3.png)
+![800](/public/assets/images/userguide/customer/permission4.png)
+![800](/public/assets/images/userguide/customer/permission5.png)
+![800](/public/assets/images/userguide/customer/permission6.png)
+![800](/public/assets/images/userguide/customer/permission7.png)
+![800](/public/assets/images/userguide/customer/permission8.png)
+
 
 For further details about the roles and their permissions, you can refer to the provided [link](https://docs.google.com/spreadsheets/d/1E11LfMSIaf1WGiW0KE08HcjXhb6WKsW6LRTVJJ9CNz4/edit#gid=1005309589).
 

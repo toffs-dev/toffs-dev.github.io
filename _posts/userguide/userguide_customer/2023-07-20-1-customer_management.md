@@ -4,6 +4,11 @@ id_menu: ug_customer
 title: Customer Management
 categories: [UserGuide,UserGuide_Customer]
 ---
+
+![800](/public/assets/images/userguide/customer/192.png)
+
+*Figure 192*
+
 This is the **“Customer Management”** page. 
 
 The customer management page holds the information of various customers including:
@@ -36,6 +41,9 @@ Once you are on the "List Customer" page, locate and click the **"+Add**" button
  	
 Figure 168: The "+Add" button on the "List Customer" page.
 
+![800](/public/assets/images/userguide/customer/193.png)
+Figure 193
+
 **Step 3: Enter Customer Information**
 
 After clicking the **"+Add"** button, you will be redirected to a form where you need to enter the following customer details:
@@ -47,7 +55,9 @@ After clicking the **"+Add"** button, you will be redirected to a form where you
 
 Once you have filled in the required information, click the **"Next"** button to proceed to the next stage of the customer addition process.
 
-Figure 169: The "Next" button on the customer information form.
+![800](/public/assets/images/userguide/customer/194.png)
+
+F*igure 194*
 
 **Step 5: Enter User Information**
 
@@ -62,19 +72,25 @@ In this step, you need to provide the user information associated with the new c
 
 Once you have entered all the necessary user information, click the **"Save"** button to finalize the addition of the new customer.
 	
-Figure 170: The "Save" button to complete the process.
+![800](/public/assets/images/userguide/customer/195.png)
+
+*Figure 195*
 
 **Customer Addition Success**
 
 Upon successfully adding the customer, you will be directed back to the **"List Customer"** page, where you can now see the details of the newly added 	customer.
 
-Figure 171: Details of the added customer displayed on the "List Customer" 	page.
+![800](/public/assets/images/userguide/customer/196.png)
+
+*Figure 196*
 
 **User Association**
 
 Additionally, the system will also display the details of the newly associated user on the **"List User"** page.
 
-Figure 172: Details of the associated user displayed on the "List User" page.
+![800](/public/assets/images/userguide/customer/197.png)
+
+*Figure 197*
 
 
 ## Edit a customer's details
@@ -89,7 +105,9 @@ First, navigate to the **List Customer page** in the system. Here, you'll find a
 
 Identify the customer whose details you want to edit. Look for the **"Edit"** symbol button located next to their respective entry in the list.
 
-Figure 173
+![800](/public/assets/images/userguide/customer/198.png)
+
+*Figure 198*
 
 **Step 3: Enter the Update Customer Page**
 
@@ -99,13 +117,13 @@ Upon clicking the **"Edit"** symbol, the system will automatically redirect you 
 
 Once you have made the desired modifications, don't forget to click the **"Save"** button to apply the changes.
 
-Figure 174
+![800](/public/assets/images/userguide/customer/199.png)
+
+*Figure 199*
 
 **Step 5: Confirmation**
 
 The system will process your changes and update the customer's information accordingly.
-
-Figure 175
 
 
 ## Delete a customer
@@ -120,19 +138,22 @@ Firstly, navigate to the **List Customer** page. You can find this page in the s
 
 On the List Customer page, search for the **"Delete**" symbol button. This button will be used to initiate the deletion process.
 
-Figure 176
+![800](/public/assets/images/userguide/customer/200.png)
+
+*Figure 200*
 
 **Step 3: Confirm Deletion**
 
 After clicking the **"Delete"** symbol button, a dialogue box will appear to confirm the deletion. If you are sure you want to proceed with the deletion, click the **"Yes"** button.
 
-Figure 177
+![800](/public/assets/images/userguide/customer/201.png)
+
+*Figure 201*
 
 **Step 4: Successful Deletion**
 
 Once you have confirmed the deletion, the customer will be permanently removed from the system.
 
-Figure 178
 
 **Note:** *Exercise caution while performing this action, as deleted data may not be recoverable. Always double-check before confirming the deletion.*
 
@@ -148,6 +169,9 @@ We will learn how to download the details of a customer effortlessly. To get sta
 **Step 2: Click the Download Icon**
 
 Once you have located the **Download icon**, simply click on it to initiate the download process. The system will then begin to generate a CSV (Comma-Separated Values) file containing comprehensive information about the customer's domain.
+
+![800](/public/assets/images/userguide/customer/202.png)
+Figure 202
 
 **Step 3: Save the CSV File**
 

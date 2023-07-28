@@ -13,9 +13,15 @@ Figure 163:
 
 **Step 2:** In **Part 1/2**, you need to select and add a **"New Plan"**.
 
+![800](/public/assets/images/userguide/customer/216.png)
+
+*Figure 216*
+
 **Step 3:** Move on to **Part 2/2**, where you can either downgrade, upgrade, or extend the current subscribed plan.
 
-Figure 164:
+![800](/public/assets/images/userguide/customer/217.png)
+
+*Figure 217*
 
 Click **"Add"** to complete the process, or click **"Back"** to return to Part 1/2 if you need to make any changes.
 
