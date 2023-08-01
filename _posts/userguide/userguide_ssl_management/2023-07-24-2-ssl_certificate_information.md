@@ -9,7 +9,7 @@ categories: [UserGuide,UserGuide_SSLManage]
 *Figure 276*
 
 
-This is the “Certificate Information” page used for Toffs Technologies Support Team. Here, you can find all the **SSL Certificate Information** for various domains, including SSL Domain, Create At, Update At, Expired Date, Expire Day, Status, and Type (Upload SSL, Auto SSL).
+This is the **“Certificate Information”** page used for **Toffs Technologies Support Team**. Here, you can find all the **SSL Certificate Information** for various domains, including SSL Domain, Create At, Update At, Expired Date, Expire Day, Status, and Type (Upload SSL, Auto SSL).
 
 Let's explore the features of this page:
 
