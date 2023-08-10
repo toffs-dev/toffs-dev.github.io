@@ -1,42 +1,51 @@
 ---
 layout: post
-title: DNS Records
+title: DNS CNAME Record
 categories: [Support,Dns]
 ---
 
-## What constitutes a DNS record?
+## What is the purpose of a DNS CNAME record?
 
-DNS records, also referred to as zone files, are directives stored within authoritative DNS servers, conveying details about a domain. This information encompasses the associated IP address of the domain and how requests for that domain should be managed. These records are constructed using a sequence of text files adhering to DNS syntax. DNS syntax comprises a sequence of characters functioning as commands that guide the DNS server's actions. Each DNS record is accompanied by a 'TTL' or time-to-live value, dictating how frequently a DNS server should refresh the specific record.
+A DNS Canonical Name (CNAME) record establishes a connection between an alternative domain and a primary domain. It's utilized when one domain or subdomain acts as an alias for another domain. CNAME records are employed instead of A records in situations where domain aliasing is required. These records should direct to a domain, never an IP address. Think of it as a trail of clues in a scavenger hunt, where each clue leads to the next, culminating in the discovery of the treasure. A domain with a CNAME record functions like a clue, guiding you to another clue (another domain with its own CNAME record) or the treasure (a domain with an A record).
 
-An analogy can be drawn between a collection of DNS records and a business listing on platforms like Yelp. Similar to how a Yelp listing offers pertinent data about a business, such as its location, operating hours, and services, DNS records furnish essential information about a domain. All domains are mandated to possess fundamental DNS records to facilitate user access to their websites using domain names. Moreover, various optional records serve supplementary functions.
+For instance, consider the scenario where blog.example.com has a CNAME record pointing to "example.com" (excluding "blog"). In this case, when a DNS server accesses the DNS records for blog.example.com, it initiates an additional DNS lookup for example.com. The result is the retrieval of example.com's IP address through its corresponding A record. This situation designates example.com as the canonical name, or authentic identifier, for blog.example.com.
 
-## What are the primary types of DNS records?
+Frequently, websites incorporate subdomains such as blog.example.com or shop.example.com. These subdomains might possess CNAME records directing to the root domain (example.com). This approach simplifies updates in cases where the host's IP address changes, as modifications only need to be made to the DNS A record of the root domain, with the associated CNAME records adapting accordingly.
 
-- **A Record** - This record contains the IP address associated with a domain.
-- **AAAA Record** - This record holds the IPv6 address for a domain (in contrast to A records, which store IPv4 addresses).
-- **CNAME Record** - It forwards a domain or subdomain to another domain, without supplying an IP address.
-- **MX Record** - This record guides email to the appropriate email server.
-- **TXT Record** - Administrators can store textual notes within this record. It's commonly used for enhancing email security.
-- **NS Record** - This record stores the name server responsible for a DNS entry.
-- **SOA Record** - It stores administrative details about a domain.
-- **SRV Record** - This record designates a port for specific services.
-- **PTR Record** - It enables domain name retrieval through reverse lookups.
+It's worth clarifying a common misconception: a CNAME record doesn't invariably lead to the same website as the domain it points to. Rather, it steers the client toward the same IP address as the root domain. Once the client arrives at that IP address, the web server handles the URL accordingly. For example, blog.example.com could have a CNAME directing to example.com, guiding the client to example.com’s IP address. Yet, upon connecting to that IP address, the web server recognizes the URL as blog.example.com and serves the appropriate blog page, rather than the homepage.
 
-## What are some of the lesser-known DNS records?
+**Here's an illustration of a CNAME record:**
 
-- **AFSDB Record** - This particular record serves clients of the Andrew File System (AFS), developed by Carnegie Mellon University. Its purpose is to locate other AFS cells.
-- **APL Record** - The 'address prefix list' is an experimental record that outlines lists of address ranges.
-- **CAA Record** - The 'certification authority authorization' record empowers domain owners to specify which certificate authorities can issue certificates for their domain. In the absence of a CAA record, any entity can issue a certificate for the domain. These records also extend to subdomains.
-- **DNSKEY Record** - The 'DNS Key Record' contains a public key employed to verify signatures in the Domain Name System Security Extension (DNSSEC).
-- **CDNSKEY Record** - A child variant of the DNSKEY record, intended for transfer to a parent.
-- **CERT Record** - The 'certificate record' stores public key certificates.
-- **DCHID Record** - The 'DHCP Identifier' holds information related to the Dynamic Host Configuration Protocol (DHCP), a standardized network protocol on IP networks.
-- **DNAME Record** - The 'delegation name' record establishes a domain alias, similar to a CNAME record, but this alias encompasses all subdomains as well. For instance, if the owner of 'example.com' acquires the domain 'website.net' and assigns a DNAME record pointing to 'example.com', the redirection would also apply to 'blog.website.net' and any other subdomains.
-- **HIP Record** - This record uses the 'Host Identity Protocol,' a method that separates the roles of an IP address; it's commonly used in mobile computing.
-- **IPSECKEY Record** - The 'IPSEC key' record collaborates with Internet Protocol Security (IPSEC), a security protocol framework within the Internet Protocol Suite (TCP/IP).
-- **LOC Record** - The 'location' record contains geographical details for a domain, expressed as longitude and latitude coordinates.
-- **NAPTR Record** - The 'name authority pointer' record can be combined with an SRV record to dynamically create URIs based on regular expressions.
-- **NSEC Record** - Part of DNSSEC, the 'next secure record' is employed to verify the non-existence of a requested DNS resource record.
-- **RRSIG Record** - The 'resource record signature' is used to store digital signatures that authenticate records in accordance with DNSSEC.
-- **RP Record** - The 'responsible person' record stores the email address of the individual responsible for the domain.
-- **SSHFP Record** - This record holds the 'SSH public key fingerprints.' SSH, or Secure Shell, is a cryptographic networking protocol used for secure communication over an unsecured network.
+- Subdomain: blog.example.com
+- Record Type: CNAME
+- Value: is an alias of example.com
+- TTL (Time to Live): 32600
+
+In this instance, blog.example.com is connected to example.com. Assuming it aligns with our earlier example's A record, the eventual resolution leads to the IP address 192.0.2.1.
+
+## Is it possible for a CNAME record to indicate another CNAME record? 
+
+While this setup is feasible, it's not the most efficient approach. This is due to the need for multiple DNS lookups before the intended domain loads, resulting in a slower user experience. To illustrate, let's consider the scenario where blog.example.com employs a CNAME record that directs to the CNAME record of www.example.com, and subsequently, this points to the A record of example.com.
+
+**Specifically, for the CNAME of blog.example.com:**
+
+- Record type: CNAME
+- Value: Alias of www.example.com
+- TTL: 32600
+
+**The CNAME for www.example.com leads to:**
+
+- Record type: CNAME
+- Value: Alias of example.com
+- TTL: 32600
+
+Nonetheless, this setup introduces an extra layer in the DNS lookup process, leading to inefficiencies. Ideally, it's advisable to refrain from this configuration. Instead, the CNAME records for both blog.example.com and www.example.com should directly point to the CNAME of example.com.
+
+## What limitations apply to the utilization of CNAME records? 
+
+MX and NS records are not permitted to reference a CNAME record; they must reference an A record (for IPv4) or an AAAA record (for IPv6). An MX record functions as a mail exchange record responsible for routing emails to a mail server. Meanwhile, an NS record serves as a "name server" record, indicating the DNS server vested with authority for that particular domain.
+
+
+
+
+

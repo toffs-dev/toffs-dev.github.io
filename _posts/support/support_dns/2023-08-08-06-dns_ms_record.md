@@ -1,42 +1,53 @@
 ---
 layout: post
-title: DNS Records
+title: DNS MX Record
 categories: [Support,Dns]
 ---
 
-## What constitutes a DNS record?
+## What does a DNS MX record do?
 
-DNS records, also referred to as zone files, are directives stored within authoritative DNS servers, conveying details about a domain. This information encompasses the associated IP address of the domain and how requests for that domain should be managed. These records are constructed using a sequence of text files adhering to DNS syntax. DNS syntax comprises a sequence of characters functioning as commands that guide the DNS server's actions. Each DNS record is accompanied by a 'TTL' or time-to-live value, dictating how frequently a DNS server should refresh the specific record.
+A DNS 'mail exchange' (MX) record is responsible for guiding email to a mail server. It specifies the routing of email messages following the rules of the Simple Mail Transfer Protocol (SMTP), which serves as the standard protocol for all email communications. Similar to CNAME records, an MX record must always point to another domain.
 
-An analogy can be drawn between a collection of DNS records and a business listing on platforms like Yelp. Similar to how a Yelp listing offers pertinent data about a business, such as its location, operating hours, and services, DNS records furnish essential information about a domain. All domains are mandated to possess fundamental DNS records to facilitate user access to their websites using domain names. Moreover, various optional records serve supplementary functions.
+Illustration of an MX record:
 
-## What are the primary types of DNS records?
+- Domain: example.com
+- Record Type: MX
+- Priority: 10
+- Value: mailhost1.example.com
+- Time to Live (TTL): 45000
 
-- **A Record** - This record contains the IP address associated with a domain.
-- **AAAA Record** - This record holds the IPv6 address for a domain (in contrast to A records, which store IPv4 addresses).
-- **CNAME Record** - It forwards a domain or subdomain to another domain, without supplying an IP address.
-- **MX Record** - This record guides email to the appropriate email server.
-- **TXT Record** - Administrators can store textual notes within this record. It's commonly used for enhancing email security.
-- **NS Record** - This record stores the name server responsible for a DNS entry.
-- **SOA Record** - It stores administrative details about a domain.
-- **SRV Record** - This record designates a port for specific services.
-- **PTR Record** - It enables domain name retrieval through reverse lookups.
+- Domain: example.com
+- Record Type: MX
+- Priority: 20
+- Value: mailhost2.example.com
+- Time to Live (TTL): 45000
 
-## What are some of the lesser-known DNS records?
+In the MX records above, the 'priority' numbers assigned before the domain names indicate a hierarchy of preference. A lower 'priority' value indicates higher preference. In this case, the server will first attempt to deliver mail to mailhost1 since its priority value of 10 is lower than 20. If a sending failure occurs, the server will resort to mailhost2.
 
-- **AFSDB Record** - This particular record serves clients of the Andrew File System (AFS), developed by Carnegie Mellon University. Its purpose is to locate other AFS cells.
-- **APL Record** - The 'address prefix list' is an experimental record that outlines lists of address ranges.
-- **CAA Record** - The 'certification authority authorization' record empowers domain owners to specify which certificate authorities can issue certificates for their domain. In the absence of a CAA record, any entity can issue a certificate for the domain. These records also extend to subdomains.
-- **DNSKEY Record** - The 'DNS Key Record' contains a public key employed to verify signatures in the Domain Name System Security Extension (DNSSEC).
-- **CDNSKEY Record** - A child variant of the DNSKEY record, intended for transfer to a parent.
-- **CERT Record** - The 'certificate record' stores public key certificates.
-- **DCHID Record** - The 'DHCP Identifier' holds information related to the Dynamic Host Configuration Protocol (DHCP), a standardized network protocol on IP networks.
-- **DNAME Record** - The 'delegation name' record establishes a domain alias, similar to a CNAME record, but this alias encompasses all subdomains as well. For instance, if the owner of 'example.com' acquires the domain 'website.net' and assigns a DNAME record pointing to 'example.com', the redirection would also apply to 'blog.website.net' and any other subdomains.
-- **HIP Record** - This record uses the 'Host Identity Protocol,' a method that separates the roles of an IP address; it's commonly used in mobile computing.
-- **IPSECKEY Record** - The 'IPSEC key' record collaborates with Internet Protocol Security (IPSEC), a security protocol framework within the Internet Protocol Suite (TCP/IP).
-- **LOC Record** - The 'location' record contains geographical details for a domain, expressed as longitude and latitude coordinates.
-- **NAPTR Record** - The 'name authority pointer' record can be combined with an SRV record to dynamically create URIs based on regular expressions.
-- **NSEC Record** - Part of DNSSEC, the 'next secure record' is employed to verify the non-existence of a requested DNS resource record.
-- **RRSIG Record** - The 'resource record signature' is used to store digital signatures that authenticate records in accordance with DNSSEC.
-- **RP Record** - The 'responsible person' record stores the email address of the individual responsible for the domain.
-- **SSHFP Record** - This record holds the 'SSH public key fingerprints.' SSH, or Secure Shell, is a cryptographic networking protocol used for secure communication over an unsecured network.
+Additionally, the email service can configure the MX record to distribute the mail equally between the two servers by assigning them equal priorities:
+
+- Domain: example.com
+- Record Type: MX
+- Priority: 10
+- Value: mailhost1.example.com
+- Time to Live (TTL): 45000
+
+- Domain: example.com
+- Record Type: MX
+- Priority: 10
+- Value: mailhost2.example.com
+- Time to Live (TTL): 45000
+
+This setup allows the email provider to evenly distribute the incoming mail load between both servers, ensuring balanced performance.
+
+## What is the process of querying an MX record?
+
+Querying MX records involves the utilization of Message Transfer Agent (MTA) software. When an email is initiated by a user, the MTA performs a DNS query to ascertain the mail servers designated for the recipients of the email. Subsequently, the MTA establishes an SMTP connection with these mail servers, commencing with the ones that possess higher priority, as exemplified in the first scenario with "mailhost1."
+
+## What constitutes a backup MX record?
+
+A backup MX record corresponds to an MX record assigned to a mail server with a higher numeric value representing "priority" (indicating lower priority). This configuration ensures that during normal circumstances, email traffic is directed to the more prioritized mail servers. In the given example, "mailhost2" functions as the 'backup' server, stepping in only if "mailhost1" is unavailable.
+
+## Can MX records be directed to a CNAME?
+
+CNAME records are employed to reference a domain's alias instead of its original label. Typically, CNAME records point to an A record (for IPv4) or AAAA record (for IPv6) of that domain. However, MX records must directly target a server's A record or AAAA record. The RFC documents that outline the functionality of MX records explicitly prohibit the practice of pointing MX records to CNAMEs.
