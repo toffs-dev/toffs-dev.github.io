@@ -75,6 +75,6 @@ Look for the **"View"** button next to each domain or website entry. This button
 - The certificate file will typically have a **".crt"** and **".key"** file extension.
 - You can use this certificate for various purposes, such as installing it on your web server or using it in other services.
 
-**Note:** *Only SSL certificates for domains that have been updated after this feature's publication will be displayed. SSL certificates generated or updated before this feature's release will not be shown.*
+**Note:** *Only SSL certificates for domains that have been updated after this feature's publication will be displayed and allow to download with all details (base on Update at column). SSL certificates generated or updated before this feature's release will not be shown in details.*
 
 Please contact **Toffs Security Operation Center** for assistance if you encounter any issues.
