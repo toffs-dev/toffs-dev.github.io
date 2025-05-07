@@ -35,7 +35,7 @@ In the digital era, delivering content seamlessly and efficiently is essential f
 
 3. **Rate Limiting Rule Management:**
 
-    - Establish flexible rate limiting rules based on requests per second, minute, or hour.
+    - Establish flexible rate limiting rules based on requests per second, or minute.
     - Apply rate limits to individual users, IP addresses, or predefined groups, ensuring fair access and preventing abuse.
     - Customize error responses or redirect users to dedicated error pages when rate limits are exceeded.
     - Gain insights into usage patterns, traffic spikes, and potential abuse through comprehensive analytics and logging.
